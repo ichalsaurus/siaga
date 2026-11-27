@@ -215,21 +215,18 @@ h1 em.nm{font-family:var(--disp);font-weight:500;font-size:1em;line-height:inher
 .tcard .trc{margin:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none}
 .tcard .trc .tg{stroke:#D9D2C3}
 }
-
-/* ---- penyempurnaan tampilan HP ---- */
+/* ---- HP: peta lebih besar, bisa digeser kiri-kanan ---- */
+.mapw,.mapsc{display:contents}.mhint{display:none}
 @media(max-width:820px){
-.tp{display:block;top:100px;left:0;right:0;width:auto}
-.tp .th{padding:0 16px;margin-bottom:7px}
-.tp .th span{display:none}
-.tp ol{display:flex;gap:8px;overflow-x:auto;padding:2px 16px 8px;scroll-snap-type:x proximity;scroll-padding:0 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.tp ol::-webkit-scrollbar{display:none}
-.tp li{flex:0 0 120px;scroll-snap-align:start;padding:8px 10px 9px}
-.tp li strong{font-size:21px}
-.map{top:42%}.glow{top:42%}
-#ns{display:block;left:18px;right:18px;top:calc(42% + 100px);width:auto}
-#ns .ns b{font-size:34px}
-#ns .nd{font-size:12.5px;max-width:300px}
-.fp .tc{display:none}
+.mapw{display:block;position:absolute;left:0;right:0;top:112px;bottom:224px;z-index:1}
+.mapsc{display:flex;align-items:center;height:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.mapsc::-webkit-scrollbar{display:none}
+.map{position:relative;left:auto;top:auto;flex:none;transform:none;width:min(clamp(150vw,calc((100dvh - 364px)/.44),210vw),calc((100dvh - 140px)/.44));animation:inm .7s ease both}
+.app.focus .map{transform:scale(1.5)}
+.app.focus .mapsc{pointer-events:none}
+@keyframes inm{from{opacity:0;transform:translateY(12px)}}
+.mhint{display:block;position:absolute;left:50%;bottom:4px;transform:translateX(-50%);padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.92);border:1px solid var(--line);font-size:11.5px;color:var(--mut);white-space:nowrap;pointer-events:none;transition:opacity .4s}
+.mapw.seen .mhint,.app.focus .mhint{opacity:0}
 }
 </style>
 </head>
@@ -264,14 +261,14 @@ h1 em.nm{font-family:var(--disp);font-weight:500;font-size:1em;line-height:inher
     <p class="dn">Data resmi BNPB · jumlah kejadian tercatat</p>
   </aside>
 
-  <div class="map" role="img" aria-label="Peta 38 provinsi Indonesia">
+  <div class="mapw" id="mapw"><div class="mapsc" id="mapsc"><div class="map" role="img" aria-label="Peta 38 provinsi Indonesia">
     <svg viewBox="0 0 1000 440" aria-hidden="true">
       <path id="shd" fill="rgba(20,22,28,.07)" transform="translate(0 14)"/>
       <path id="sil" fill="var(--side)" stroke="var(--side)" stroke-width="1.2" transform="translate(0 5)"/>
       <g id="prov"></g>
       <path id="hs"/><path id="ht"/>
     </svg>
-  </div>
+  </div></div><div class="mhint" aria-hidden="true">↔ Geser peta</div></div>
 
   <div id="nodes"></div>
   <div id="ns" aria-live="polite"></div>
@@ -488,7 +485,11 @@ function trendCard(){
 const KEY={banjir:'banjir',pasang:'pasang',gempa:'gempa',longsor:'longsor',gunung:'erupsi',tsunami:'tsunami',karhutla:'karhutla',kering:'kekeringan',cuaca:'cuaca'};
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches,DC=$('#dc'),CO=$('#co'),MAPEL=$('.map'),SC={};
 let G3=window.__3D,GL=null,CAM=null,SCN=null,SLAB=null,LAY=[],gl=0,rz=0,XT=0,ut=0,NOUT=0,LV=0;
-MAPEL.addEventListener('animationend',()=>{MAPEL.style.animation='none'},{once:true});   // animasi masuk tidak mengunci opacity
+MAPEL.addEventListener('animationend',()=>{MAPEL.style.animation='none'},{once:true});
+{const mwr=$('#mapw'),msc=$('#mapsc'),mmq=matchMedia('(max-width:820px)');let mlw=0;
+ const mctr=()=>{if(!mmq.matches||innerWidth===mlw)return;mlw=innerWidth;msc.scrollLeft=(msc.scrollWidth-msc.clientWidth)/2};
+ mctr();addEventListener('load',()=>{mlw=0;mctr()});addEventListener('resize',mctr);
+ msc.addEventListener('pointerdown',()=>mwr.classList.add('seen'),{once:true});setTimeout(()=>mwr.classList.add('seen'),6000)}   // animasi masuk tidak mengunci opacity
 addEventListener('ben3d',()=>{G3=window.__3D;if(foc)showDiscs();else showNodes()});
 addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{if(foc)showDiscs(1);else if(!LV)showNodes()},250)});
 function disc3(k){
@@ -651,7 +652,7 @@ function natCard(){
   if(foc)return;const el=$('#ns');
   if(!HF){el.replaceChildren();pTxt.style.display='';pTxt.textContent=N0.p;return}
   const a=NAS[HAZ.indexOf(HF)],v=a[15],pv=a[14],d=pv>0?Math.round((v/pv-1)*100):null,pk=a.indexOf(Math.max(...a)),sh=Math.round(v/RING[15]*100);
-  if(matchMedia('(min-width:1001px)').matches||matchMedia('(max-width:820px)').matches){
+  if(matchMedia('(min-width:1001px)').matches){
     pTxt.style.display='';
     const SH={banjir:'Air meluap dan menggenangi daratan.',pasang:'Air laut naik ke pesisir saat pasang tinggi.',gempa:'Getaran akibat pergeseran lempeng bumi.',longsor:'Tanah dan batuan bergerak turun di lereng.',gunung:'Letusan dari gunung api yang aktif.',tsunami:'Gelombang laut besar, biasanya akibat gempa.',karhutla:'Hutan dan lahan terbakar, kerap saat kemarau.',kering:'Kekurangan air dalam waktu lama.',cuaca:'Angin kencang dan hujan lebat mendadak.'};
     el.innerHTML=`<div class="ns"><div class="r"><b>${v.toLocaleString('id-ID')}</b>${d===null?'':`<em>${d>=0?'▲':'▼'} ${Math.abs(d)}%</em>`}</div><span>kejadian di 2025 (vs 2024)</span></div><p class="nd">${SH[HF[0]]}</p>`;
