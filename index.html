@@ -216,7 +216,7 @@ h1 em.nm{font-family:var(--disp);font-weight:500;font-size:1em;line-height:inher
 .tcard .trc .tg{stroke:#D9D2C3}
 }
 /* ---- HP: peta lebih besar, bisa digeser kiri-kanan ---- */
-.mapw,.mapsc{display:contents}.mhint{display:none}
+.mapw,.mapsc{display:contents}.mhint,.mbar,.mar{display:none}
 @media(max-width:820px){
 .mapw{display:block;position:absolute;left:0;right:0;top:112px;bottom:224px;z-index:1}
 .mapsc{display:flex;align-items:center;height:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -225,9 +225,23 @@ h1 em.nm{font-family:var(--disp);font-weight:500;font-size:1em;line-height:inher
 .app.focus .map{transform:scale(1.5)}
 .app.focus .mapsc{pointer-events:none}
 @keyframes inm{from{opacity:0;transform:translateY(12px)}}
-.mhint{display:block;position:absolute;left:50%;bottom:4px;transform:translateX(-50%);padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.92);border:1px solid var(--line);font-size:11.5px;color:var(--mut);white-space:nowrap;pointer-events:none;transition:opacity .4s}
-.mapw.seen .mhint,.app.focus .mhint{opacity:0}
+.mhint{display:block;position:absolute;left:50%;bottom:18px;transform:translateX(-50%);padding:6px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:12px;white-space:nowrap;pointer-events:none;transition:opacity .4s;animation:mh 1.8s ease-in-out infinite}
+.mapw.seen .mhint,.app.focus .mhint{opacity:0;animation:none}
+@keyframes mh{50%{transform:translateX(-50%) translateX(6px)}}
+/* tepi peta memudar kalau masih ada yang bisa digeser */
+.mapsc{--fl:0px;--fr:0px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent)}
+/* panah di tepi */
+.mar{display:grid;place-items:center;position:absolute;top:50%;width:30px;height:30px;margin-top:-15px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:0 4px 12px rgba(30,25,10,.12);font-size:18px;line-height:1;color:var(--ink);pointer-events:none;opacity:0;transition:opacity .25s;z-index:2}
+.mar.l{left:8px}.mar.r{right:8px}
+.mapw.cl .mar.l,.mapw.cr .mar.r{opacity:1}
+.mapw.cr .mar.r{animation:ar 1.6s ease-in-out infinite}.mapw.cl .mar.l{animation:al 1.6s ease-in-out infinite}
+@keyframes ar{50%{transform:translateX(4px)}}@keyframes al{50%{transform:translateX(-4px)}}
+.app.focus .mar,.app.focus .mbar{opacity:0!important}
+/* indikator posisi geser */
+.mbar{display:block;position:absolute;left:50%;bottom:6px;width:72px;height:4px;margin-left:-36px;border-radius:2px;background:var(--line);pointer-events:none;transition:opacity .3s}
+.mbar i{position:absolute;top:0;bottom:0;left:0;width:50%;border-radius:2px;background:var(--ink)}
 }
+@media(prefers-reduced-motion:reduce){.mhint,.mapw .mar{animation:none!important}}
 </style>
 </head>
 <body>
@@ -268,7 +282,7 @@ h1 em.nm{font-family:var(--disp);font-weight:500;font-size:1em;line-height:inher
       <g id="prov"></g>
       <path id="hs"/><path id="ht"/>
     </svg>
-  </div></div><div class="mhint" aria-hidden="true">↔ Geser peta</div></div>
+  </div></div><span class="mar l" aria-hidden="true">‹</span><span class="mar r" aria-hidden="true">›</span><div class="mhint" aria-hidden="true">↔ Geser untuk lihat seluruh peta</div><div class="mbar" aria-hidden="true"><i></i></div></div>
 
   <div id="nodes"></div>
   <div id="ns" aria-live="polite"></div>
@@ -489,7 +503,19 @@ MAPEL.addEventListener('animationend',()=>{MAPEL.style.animation='none'},{once:t
 {const mwr=$('#mapw'),msc=$('#mapsc'),mmq=matchMedia('(max-width:820px)');let mlw=0;
  const mctr=()=>{if(!mmq.matches||innerWidth===mlw)return;mlw=innerWidth;msc.scrollLeft=(msc.scrollWidth-msc.clientWidth)/2};
  mctr();addEventListener('load',()=>{mlw=0;mctr()});addEventListener('resize',mctr);
- msc.addEventListener('pointerdown',()=>mwr.classList.add('seen'),{once:true});setTimeout(()=>mwr.classList.add('seen'),6000)}   // animasi masuk tidak mengunci opacity
+ // petunjuk geser: panah + pudar tepi + indikator posisi; petunjuk teks tetap tampil sampai pengguna benar-benar menggeser
+ const thumb=$('.mbar i');let touched=false,x0=0,nudged=false,nt=0;
+ const sync=()=>{const mx=msc.scrollWidth-msc.clientWidth,sl=msc.scrollLeft,cl=mmq.matches&&sl>6,cr=mmq.matches&&sl<mx-6;
+  mwr.classList.toggle('cl',cl);mwr.classList.toggle('cr',cr);
+  msc.style.setProperty('--fl',cl?'40px':'0px');msc.style.setProperty('--fr',cr?'40px':'0px');
+  if(thumb&&msc.scrollWidth){const w=msc.clientWidth/msc.scrollWidth;thumb.style.width=w*100+'%';thumb.style.left=(mx>0?sl/mx*(1-w)*100:0)+'%'}};
+ msc.addEventListener('scroll',()=>{sync();if(touched&&Math.abs(msc.scrollLeft-x0)>24)mwr.classList.add('seen')},{passive:true});
+ msc.addEventListener('pointerdown',()=>{touched=true;x0=msc.scrollLeft;clearTimeout(nt)});msc.addEventListener('touchstart',()=>{touched=true;x0=msc.scrollLeft;clearTimeout(nt)},{passive:true});
+ addEventListener('resize',sync);addEventListener('load',()=>setTimeout(sync,50));sync();setTimeout(sync,100);
+ // goyang sekali di awal: peta geser sedikit ke kanan lalu kembali, biar kelihatan bisa digeser
+ const nudge=()=>{if(nudged||touched||RM||!mmq.matches||foc)return;nudged=true;const c=msc.scrollLeft,d=Math.min(90,msc.scrollWidth*.12);
+  msc.scrollTo({left:c+d,behavior:'smooth'});nt=setTimeout(()=>{if(!touched)msc.scrollTo({left:c,behavior:'smooth'})},900)};
+ setTimeout(nudge,1400)}
 addEventListener('ben3d',()=>{G3=window.__3D;if(foc)showDiscs();else showNodes()});
 addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{if(foc)showDiscs(1);else if(!LV)showNodes()},250)});
 function disc3(k){
