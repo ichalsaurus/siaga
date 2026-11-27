@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Siaga · Peta Bencana Indonesia</title>
+<meta name="description" content="Peta interaktif kejadian bencana di 38 provinsi Indonesia, 2010–2025. Pilih provinsi atau jenis bencana untuk melihat jumlah kejadian tercatat BNPB.">
+<meta name="theme-color" content="#F4F1EA">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Siaga">
+<meta property="og:title" content="Siaga · Peta Bencana Indonesia">
+<meta property="og:description" content="Peta interaktif kejadian bencana di 38 provinsi Indonesia, 2010–2025. Pilih provinsi atau jenis bencana untuk melihat jumlah kejadian tercatat BNPB.">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAwFBMVEXuWi/m5ub6+/sAAAD1YTbo19La2NbYuK7qdlTVppjQmIjVysa4Ng/tuKjOiHPqWi/vWy//fwDZw7zta0XthmjsppHt4d7HQhr/AADtw7bFVzbESiXlVijvXTDwXDDwWzD/VVXtlXvCOhHHZUjTdVnOfWXjzcW3RyXtm4PVkXz6TBm3KwKqVQC4Vzq8Zky9lorUrKG6Qx/f4N/Z5OfifmD2gV/xsZ4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADPMtyUAAAAQHRSTlP+//8A/v////////////85xQL///////8B////GVWJuAP//////////////wP/////////////AAAAAAAAAAAAMqTrRAAAA4NJREFUeNqlV+disjAUTUI2QwUBgbbWPbq+/f6P9iVhWgnacn8oxZ5z980NcLQsZo4zeZqCO2X6NHGc2cJAgf5Q8McpwOBuwWD6aGAlwbPzsMRfgBsKvHxQQEPw7EzAF+GlFRPNAJQhE/BNmSgwWMwewLflYbYAr84SfxePl84rcB7x9y3Aj8qF6RiC6QJMwCiZgCc8lOyI82jIQvwELPWL53FGIDKSEP/IbVXdj15lFbYV6M/vdYv7FQQlJ6il5kji6A545He0ngJYS/kmvpmyuFJeiUvgJUUy7EhEDLxjNrwQ/cYf8h62mIrg1zUDsbox76hMuiZ0DdGvott4yOOG4ZMv+rnXhqj7b3/P4EhKJGUNA6oZSB8B6arJtuCMTUFAkoqaQbKawe/Pn3G+TBwNV4qCuQkkLK9sES8HWkdybnMABekmI4qESXcl3g4CMcqCMg4s9SSyOeFXBuzTYi3ec/Wwc6lcewGCeyllqEFs7b01gfxkAq4juE2LotAwhEK2MYjgh0s/tO1BcRDQEsdVhWdpuk7T3EXaCyiKQkIYMhca32NJUJvLywbP6hSEMsjTD6jU67+I1ogIhT/Ul4o8z0hDcLwgSJocUukqjUZIQkMDIFDR6QqOKOD7iiD7nIO6hgWlSfkoKnUihDlTJisGrvqlLwi8JSCNn5BULAIFL+/HMzAHYNhbz/OWYHMQWbf/yFaZn6894XONkBTuggECJLyfLxuN29eMMiBwl2/Jb8riKHAR87zwiqB1IU8LT4WecJSVvrBARVKGqjDIO6UuRVtdXZ8J2k7ceN5Bf6sZzMsYSiYQpWoq8y2kqh5YvgmvKwnWBESeSlwW4TJh0iTVV3XD4+5QyPoLqZk+unzaXMRndUy5IO4QHHtL2SorlUPlNLGVcoT6GNibWz9S1X1YutDWTE07l7/vNmVKXt4RrGMzP7qUQls7m0SilmCHTE0UKuV+NaJoU+L9U/HftRNqAqkZVk2hKpqaqnekdRuykb1uJ+ZevqS244n3xLGd5S3eOtZNKodzWeuHfPBkHoKX45nfONtv4OHOfjyvkJ2CVurpdnC9If0UNVodDrd2lLh3t6jf0eCeHetqQ2vg8r6tlgvSg4bhCd+9KeK5cLt2QMoktyya1lU3+nMSgikRMuDYvuqOXrZHr/ujLxyjrzyjL12jr33jL57jr77jL9+jrv//AS1tMvYpxMqYAAAAAElFTkSuQmCC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Playfair+Display:wght@400..600&family=Allura&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F1EA;--ink:#15171C;--mut:#6B675D;--line:#DDD7CA;--land:#E2DDCF;--dim:#EEEADF;--side:#CBC4B2;--ind:#5B5BD6;--hz:#E8553A;--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--disp:'Playfair Display',Georgia,'Times New Roman',serif;--script:'Allura','Snell Roundhand',cursive;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden;background:var(--bg);color:var(--ink);font-family:var(--sans);font-optical-sizing:auto;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible{outline:2px solid var(--ind);outline-offset:3px}
+.app{position:relative;height:100%;overflow:hidden}
+.rings{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.glow{position:absolute;left:50%;top:57%;width:min(72vw,920px);aspect-ratio:2/1;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(214,170,130,.16),rgba(255,160,120,.05) 60%,transparent);pointer-events:none}
+.nar{position:absolute;left:clamp(20px,3vw,48px);top:28px;max-width:min(640px,calc(100vw - 340px));z-index:3;pointer-events:none}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--mut);letter-spacing:.04em;margin-bottom:14px}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--hz)}
+h1{margin:0 0 14px;font-family:var(--disp);font-weight:500;font-size:clamp(30px,3vw,46px);line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+h1 em{font-family:var(--script);font-style:normal;font-weight:400;font-size:1.35em;line-height:.7;letter-spacing:0;color:var(--hz);transition:color .2s}
+h1 em.nm{font-family:var(--disp);font-weight:500;font-size:1em;line-height:inherit;letter-spacing:-.015em}
+.nar p{margin:0;max-width:470px;font-size:14px;line-height:1.6;color:var(--mut);text-wrap:pretty}
+.info{position:absolute;right:clamp(20px,3vw,48px);top:28px;width:224px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;z-index:3;box-shadow:0 8px 24px rgba(30,25,10,.05)}
+.k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+#iT{font-family:var(--disp);font-weight:500;font-size:20px;line-height:1.15;letter-spacing:-.01em;margin:0 0 2px}
+#iT:empty,#iS:empty{display:none}
+.info:has(#iT:empty) .hzl{margin-top:0;padding-top:0;border-top:0}
+#iS{font-size:12px;color:var(--mut)}
+.hzl{display:flex;align-items:center;gap:8px;margin-top:10px;padding-top:9px;border-top:1px solid var(--line);font-size:12.5px}
+.hzl i{width:10px;height:10px;border-radius:50%;background:var(--hz)}
+.hzl small{margin-left:auto;color:var(--mut);font-size:11px}
+.map{transition:opacity .5s,transform .8s cubic-bezier(.2,.7,.2,1);position:absolute;left:50%;top:57%;width:min(80vw,calc((100dvh - 210px)*2.27));aspect-ratio:1000/440;transform:translate(-50%,-50%);animation:in .7s ease both}
+.src{position:absolute;right:clamp(20px,3vw,48px);bottom:28px;z-index:4;background:none;border:0;padding:6px;font-size:12px;color:var(--mut);text-decoration:underline;text-underline-offset:3px}
+.map svg{width:100%;height:100%;overflow:visible;display:block}
+@keyframes in{from{opacity:0;transform:translate(-50%,-47%)}to{opacity:1;transform:translate(-50%,-50%)}}
+.prov{fill:color-mix(in srgb,color-mix(in srgb,var(--hz) 90%,#000 25%) calc(var(--h,0)*1%),var(--land));stroke:#fff;stroke-width:.8;stroke-linejoin:round;cursor:pointer;vector-effect:non-scaling-stroke;transition:fill .45s,opacity .35s}
+.prov.hide{opacity:0;pointer-events:none}
+#sil{vector-effect:non-scaling-stroke}
+.prov.dim{fill:var(--dim)}
+#ht{fill:var(--hz);stroke:#fff;stroke-width:1.2;stroke-linejoin:round;pointer-events:none;transform:translateY(-2px)}
+#hs{fill:rgba(20,22,28,.28);pointer-events:none;transform:translateY(2px)}
+.node{position:absolute;left:var(--x);top:var(--y);width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:0 6px 16px rgba(30,25,10,.08);display:grid;place-items:center;z-index:4;padding:0;cursor:pointer;transition:opacity .3s}
+.node svg{fill:none;stroke:var(--c);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;transition:opacity .3s}
+/* setelah 3D siap: tombol jadi transparan, diorama digambar di kanvas di belakangnya */
+.app.d3 .node{background:none;border-color:transparent;box-shadow:none}
+.app.d3 .node svg{opacity:0}
+.app.d3 .node::before{content:"";position:absolute;left:-2px;right:-2px;top:46%;bottom:-6px;border-radius:50%;background:radial-gradient(closest-side,color-mix(in srgb,var(--c) 38%,transparent),color-mix(in srgb,var(--c) 10%,transparent) 64%,transparent);transition:transform .25s}
+.app.d3 .node:hover::before{transform:scale(1.12)}
+.app.d3 .node[aria-pressed=true]::after{content:"";position:absolute;left:0;right:0;top:50%;bottom:-2px;border-radius:50%;border:1.5px solid var(--c);animation:pu 2.4s ease-out infinite}
+.app.d3 .node.off{opacity:.45}.app.d3 .node.off:hover{opacity:1}
+.node span{position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:-4px;font-size:12px;white-space:nowrap;background:#fff;color:var(--ink);border:1px solid var(--line);padding:3px 11px;border-radius:999px;box-shadow:0 4px 12px rgba(30,25,10,.08);pointer-events:none;transition:background .15s,color .15s,border-color .15s}
+.app:not(.d3) .node span{opacity:0;background:var(--ink);color:#fff;border-color:var(--ink);margin-top:6px}
+.node:hover span,.node:focus-visible span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.app:not(.d3) .node:hover span,.app:not(.d3) .node:focus-visible span,.app:not(.d3) .node[aria-pressed=true] span{opacity:1}
+.node[aria-pressed=true] span{background:var(--c);color:#fff;border-color:var(--c)}
+.node:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@keyframes tx{from{opacity:0;transform:translateY(8px)}}
+@keyframes pu{from{transform:scale(1);opacity:.75}to{transform:scale(1.5);opacity:0}}
+.reg{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);display:flex;gap:4px;padding:5px;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:999px;z-index:4;max-width:calc(100vw - 32px);overflow-x:auto}
+.reg button{border:0;background:none;padding:8px 14px;border-radius:999px;font-size:13px;white-space:nowrap}
+.reg button[aria-pressed=true]{background:var(--ink);color:#fff}
+.dr{position:fixed;top:0;right:0;height:100dvh;width:min(440px,100vw);background:#fff;border-left:1px solid var(--line);transform:translateX(100%);visibility:hidden;transition:transform .25s ease,visibility .25s;z-index:10;display:flex;flex-direction:column}
+.dr.open{transform:none;visibility:visible}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:calc(18px + env(safe-area-inset-top,0px)) 24px 18px;border-bottom:1px solid var(--line)}
+.dh b{font-family:var(--disp);font-weight:500;font-size:22px}
+.x{border:1px solid var(--line);background:#fff;border-radius:50%;width:36px;height:36px;font-size:18px}
+.db{overflow-y:auto;overscroll-behavior:contain;padding:8px 24px 32px}
+.db ul{list-style:none;margin:0;padding:0}
+.db li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid #eee9de}
+.db li i{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 14%,#fff)}
+.db li svg{fill:none;stroke:var(--c);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.db b{font-weight:600;font-size:15px}
+.db p{margin:3px 0 0;font-size:14px;line-height:1.6;color:var(--mut)}
+.db a{color:var(--ink)}
+@media(min-width:821px) and (max-height:860px){.nar p{display:none}}
+@media(max-width:820px){
+.nar{top:20px;left:16px;right:16px;max-width:none}.nar h1{font-size:28px}.nar p,.tag{display:none}
+.info{top:auto;bottom:196px;left:16px;right:16px;width:auto}
+.map{top:46%;width:96vw}.glow{top:46%}
+#nodes{position:absolute;left:0;right:0;bottom:70px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:0 16px;z-index:4}
+.node{position:relative;left:auto;top:auto;margin:0;width:56px;height:56px}.node span{display:none}
+#nodes{gap:4px}
+.reg{display:none}
+}
+/* ---- fokus provinsi ---- */
+.info,.nar,#nodes,.reg,.node{transition:opacity .3s}
+.app.focus .info,.app.focus #nodes,.app.focus .reg,.app.focus .node{opacity:0;pointer-events:none}
+.app.focus .map{opacity:0;pointer-events:none;transform:translate(-50%,-50%) scale(1.5)}
+.app.focus #ht,.app.focus #hs{display:none}
+.fp{position:absolute;right:clamp(20px,3vw,48px);top:28px;width:316px;max-height:calc(100dvh - 56px);overflow-y:auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px 18px;z-index:5;box-shadow:0 8px 24px rgba(30,25,10,.05);opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .25s,transform .3s,visibility .25s}
+.app.focus .fp{opacity:1;visibility:visible;transform:none;transition:opacity .45s .3s,transform .55s .3s cubic-bezier(.2,.7,.2,1),visibility .45s .3s}
+.app.leaving .fp{opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .22s,transform .3s,visibility .22s}
+.fh{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:14px}
+.fh small{font-size:11px;color:var(--mut)}
+.bk{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px}
+.bk:hover{background:var(--bg)}
+.tot{display:flex;align-items:baseline;gap:8px;margin-bottom:8px}
+.tot b{font-family:var(--disp);font-weight:500;font-size:38px;line-height:1;letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.tot span{font-size:13px;color:var(--mut)}
+.hr{display:grid;grid-template-columns:22px 1fr auto;align-items:center;gap:6px 10px;width:100%;text-align:left;border:0;background:none;padding:8px;border-radius:12px}
+.hr:hover{background:var(--bg)}
+.hr[aria-pressed=true]{background:color-mix(in srgb,var(--c) 12%,#fff)}
+.hr svg{fill:none;stroke:var(--c);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.hr span{font-size:13.5px}
+.hr em{font-style:normal;font-size:13px;color:var(--mut);font-variant-numeric:tabular-nums}
+.hr u{grid-column:2/4;height:4px;border-radius:2px;background:var(--line);position:relative}
+.hr u::after{content:"";position:absolute;left:0;top:0;bottom:0;width:var(--w);background:var(--c);border-radius:2px}
+.ev{margin-top:10px;padding-top:12px;border-top:1px solid var(--line)}
+.ev h3{margin:0;font-size:13px;font-weight:600}
+.ev ul{list-style:none;margin:6px 0 0;padding:0}
+.ev li{display:flex;justify-content:space-between;gap:8px;padding:6px 0;font-size:13px}
+.ev li span{color:var(--mut)}
+@media(max-width:820px){
+.fp{top:auto;left:12px;right:12px;bottom:12px;width:auto;max-height:50dvh}
+}
+.gl{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+#dc{position:absolute;inset:0;z-index:3;pointer-events:none}
+.dc{position:absolute;border:0;background:none;border-radius:50%;padding:0;pointer-events:auto}
+.dc::after{content:"";position:absolute;left:-3px;right:-3px;top:41%;height:58%;border-radius:50%;border:2px solid var(--c);opacity:0;transition:opacity .2s}
+.dc[aria-pressed=true]::after{opacity:1}
+.dc span{position:absolute;left:50%;top:98%;transform:translateX(-50%);white-space:nowrap;font-size:12px;background:var(--ink);color:#fff;padding:3px 9px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .15s}
+.dc:hover span,.dc:focus-visible span{opacity:1}
+.dc{cursor:pointer}
+.co{--cb:color-mix(in srgb,var(--hz) 78%,#1b1b1f);position:absolute;z-index:4;transform:translate(-50%,-100%);white-space:nowrap;background:var(--cb);color:#fff;border-radius:14px;padding:8px 14px 9px;text-align:center;line-height:1.25;pointer-events:none;opacity:0;transition:opacity .2s,left .25s,top .25s;box-shadow:0 8px 20px rgba(30,25,10,.18)}
+.co.on{opacity:1}
+.co::after{content:"";position:absolute;left:50%;top:100%;margin-left:-7px;border:7px solid transparent;border-top-color:var(--cb)}
+.co b{display:block;font-family:var(--disp);font-weight:500;font-size:22px;line-height:1.25;font-variant-numeric:lining-nums}
+.co small{display:block;font-size:11px;opacity:.85}
+.nt{margin:6px 8px 0;font-size:12px;line-height:1.5;color:var(--mut)}
+.nt:empty{display:none}
+.sp{display:flex;align-items:flex-end;gap:3px;height:64px;margin-top:10px}.sp i{flex:1;background:var(--line);border-radius:3px 3px 1px 1px;transition:background .2s}.sp i.on{background:var(--hz,#C8452B)}.sa{display:flex;justify-content:space-between;margin-top:6px;font-size:11px;color:var(--mut)}
+.fh{flex-wrap:nowrap;gap:6px}.fh .bk{padding:7px 12px;font-size:12.5px;white-space:nowrap}
+.ys{display:inline-flex;gap:4px}.ys button{border:1px solid var(--line);background:#fff;padding:6px 9px;border-radius:999px;font-size:12px;color:var(--ink);cursor:pointer;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}.ys button:hover{border-color:var(--ink)}.ys button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+@media(prefers-reduced-motion:reduce){.map,.fp,.prov,.dc::after{transition:none}}
+/* ---- diorama mini di peta awal ---- */
+.hd{margin:8px 0 0;font-size:12px;line-height:1.5;color:var(--mut)}
+.lg{display:flex;align-items:center;gap:8px;margin-top:9px;font-size:11px;color:var(--mut)}
+.lg b{flex:1;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--land),color-mix(in srgb,var(--hz) 90%,#000 25%));box-shadow:inset 0 0 0 1px var(--line)}
+.dn{margin:8px 0 0;font-size:10.5px;color:var(--mut);opacity:.8}
+@media(max-width:820px){.hd,.dn{display:none}}
+@media(prefers-reduced-motion:reduce){.node::after{animation:none!important}}
+.info{left:50%;right:auto;top:auto;bottom:70px;transform:translateX(-50%);width:auto;background:none;border:0;box-shadow:none;padding:0;border-radius:0;pointer-events:none}
+.info>*:not(.lg){display:none}
+.lg{width:220px;margin:0}
+@media(max-width:820px){.info{bottom:190px;left:50%;right:auto;width:auto}}
+
+.st{display:grid;grid-template-columns:1fr 1fr;gap:8px}.st div{border:1px solid var(--line);border-radius:14px;padding:12px 14px}.st b{display:block;font-family:var(--disp);font-weight:500;font-size:26px;line-height:1.1}.st span{display:block;font-size:12px;margin-top:4px}.st small{display:block;font-size:11px;color:var(--mut);margin-top:2px}
+.cc{margin-top:24px}.cc h4{margin:0 0 4px;font-size:13px;font-weight:600}.cc p{margin:0 0 10px;font-size:12px;color:var(--mut);line-height:1.5}
+.tb.sp{height:110px}.tb.sp i.on{background:#C8452B}.tb.sp i.pk{background:var(--ink)}
+.hm{display:grid;grid-template-columns:100px repeat(16,1fr);gap:2px;align-items:center;font-size:11.5px}.hm span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:6px}.hm i{height:18px;border-radius:3px}
+.pr{display:grid;grid-template-columns:132px 1fr 46px;gap:8px;align-items:center;font-size:12.5px;padding:4px 0}.pr u{height:6px;border-radius:99px;background:linear-gradient(90deg,#C8452B var(--w),var(--line) 0)}.pr em{font-style:normal;text-align:right;color:var(--mut)}
+.st-btn{display:flex;align-items:center;gap:10px;padding:9px 16px 9px 12px;background:#fff;border:1px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;text-align:left;cursor:pointer;box-shadow:0 4px 14px rgba(30,25,10,.07);transition:border-color .2s,transform .2s}.st-btn svg{color:#C8452B;flex:none}.st-btn span{display:flex;flex-direction:column;line-height:1.25}.st-btn small{font-size:11px;font-weight:400;color:var(--mut)}.st-btn:hover{border-color:var(--ink);transform:translateY(-1px)}
+.tp{position:absolute;top:92px;left:43%;right:27%;z-index:3;transition:opacity .3s}.app.focus .tp{opacity:0;pointer-events:none}
+.tp .th{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:8px;font-size:12px;color:var(--mut)}.tp .th b{color:var(--ink);font-size:13px;font-weight:600}
+.tp ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.tp li{background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:14px;padding:10px 11px;cursor:pointer;min-width:0;transition:border-color .2s,transform .2s}.tp li:hover{border-color:var(--ink);transform:translateY(-2px)}
+.tp li small{display:block;font-size:11px;color:var(--mut)}.tp li strong{display:block;font-family:var(--disp);font-weight:500;font-size:22px;line-height:1.1;margin:2px 0 4px;font-variant-numeric:lining-nums}.tp li .n{display:block;font-size:12px;margin-bottom:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tp li u{display:block;height:3px;border-radius:9px;background:linear-gradient(90deg,var(--hz,#C8452B) var(--w),var(--line) 0)}
+@media(max-width:1000px){.tp{display:none}}
+/* ---- kanan atas: statistik + terbanyak (kartu horizontal asli) ---- */
+@media(min-width:821px){.app.tpTop .st-btn{top:auto;bottom:28px;width:auto}.app.tpTop .tp{top:24px}}
+@media(min-width:821px){
+.st-btn{top:24px;bottom:auto;width:280px;box-sizing:border-box;padding-top:7px;padding-bottom:7px}
+.tp{top:84px;left:auto;right:clamp(20px,3vw,48px);width:clamp(480px,calc(100vw - 780px),640px)}
+.tp .th{margin-bottom:8px}
+.tp li{padding:8px 10px 9px}
+.tp li strong{font-size:24px;margin:1px 0 3px}
+.tp li .n{margin-bottom:6px}
+}
+#ns{position:absolute;left:calc(clamp(200px,14vw,260px) - 38px);top:60.5%;width:195px;z-index:3;pointer-events:none;transition:opacity .3s}#ns:empty{display:none}.app.focus #ns{display:none}
+#ns .sp{height:48px;margin-top:6px}#ns p{margin:0;font-size:12px;line-height:1.5;color:var(--ink)}
+@media(max-width:820px){#ns{display:none}}
+.lg{pointer-events:none;width:130px;gap:5px;font-size:9.5px;padding:3px 0}
+.lg b{height:4px;transition:opacity .3s}#ns .nd{color:var(--mut);margin-top:8px}.ns{display:flex;flex-direction:column;gap:1px}.ns b{font-family:var(--disp);font-weight:500;font-size:30px;line-height:1;letter-spacing:-.02em;font-variant-numeric:lining-nums}.ns .r{display:flex;align-items:baseline;gap:9px}.ns span{font-size:12px}.ns em{font-style:normal;font-size:12px;font-weight:600;color:var(--hz)}#ns .ft{margin-top:5px;font-size:11.5px;color:var(--mut)}
+@media(min-width:821px){.info{left:clamp(20px,3vw,48px);bottom:8px;transform:none;transition:opacity .3s,bottom .35s ease}.info:has(.lh.off){bottom:22px}}
+.app.focus .st-btn{opacity:0;pointer-events:none}
+.app .st-btn{position:absolute;top:auto!important;bottom:10px!important;left:auto;right:14px;width:auto!important;background:none;border:0;border-radius:0;box-shadow:none;padding:6px;gap:0;font-size:9.5px;font-weight:400;color:var(--mut);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.info>.lh{display:block!important;margin:0 0 1px;padding-left:1px;font-size:9px;color:var(--mut);opacity:.85;line-height:1.3;white-space:nowrap}.info>.lh.off{display:none!important}
+.app .st-btn svg,.app .st-btn small{display:none}.app .st-btn:hover{transform:none;text-decoration-thickness:2px}
+
+/* ---- kartu tren provinsi (sheet Provinsi_Tahun) ---- */
+.trc{margin:0 0 10px;padding:9px 12px 9px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#FFFBF5,#fff 70%)}
+.trh{display:flex;align-items:baseline;gap:7px;min-height:26px;font-size:11.5px;color:var(--mut);white-space:nowrap}
+.trh b{font-family:var(--disp);font-weight:500;font-size:22px;line-height:1;letter-spacing:-.015em;color:var(--ink);font-variant-numeric:lining-nums}
+.trh em{margin-left:auto;font-style:normal;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.trh em.up{color:#C8452B}.trh em.dn{color:#6F8F73}
+.trc svg{display:block;width:100%;height:auto;margin-top:2px;overflow:visible;touch-action:pan-y;cursor:crosshair}
+.trc .tl{fill:none;stroke:#C8452B;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.trc .tg{stroke:#E8E2D5;stroke-width:1;stroke-dasharray:2 4}
+.trc .tb{fill:#C8452B;fill-opacity:.08}
+.trc .tk{stroke:#1E1B16;stroke-opacity:.35;stroke-width:1}
+.trc .tp2{font-size:10px;fill:var(--mut)}
+.trc .sa{margin-top:3px;font-size:10.5px}
+.trc .tc{margin:5px 0 0;font-size:11px;line-height:1.4;color:var(--mut)}
+.trc.in .tl{stroke-dasharray:1;stroke-dashoffset:1;animation:dl 1.2s .5s cubic-bezier(.2,.7,.2,1) forwards}
+.trc.in .ta,.trc.in .td{opacity:0;animation:fa .8s 1s ease forwards}
+@keyframes dl{to{stroke-dashoffset:0}}@keyframes fa{to{opacity:1}}
+
+@media(min-width:1200px){
+.tcard{width:272px;margin-top:20px;opacity:0;visibility:hidden;transform:translateY(8px);pointer-events:none;transition:opacity .25s,transform .3s,visibility .25s}
+.app.focus .tcard{opacity:1;visibility:visible;transform:none;pointer-events:auto;transition:opacity .45s .4s,transform .55s .4s cubic-bezier(.2,.7,.2,1),visibility .45s .4s}
+.app.leaving .tcard{opacity:0;visibility:hidden;transform:translateY(8px);pointer-events:none;transition:opacity .22s,transform .3s,visibility .22s}
+.tcard .trc{margin:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none}
+.tcard .trc .tg{stroke:#D9D2C3}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <svg class="rings" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#DDD7CA" stroke-width="1">
+      <circle cx="720" cy="512" r="230"/><circle cx="720" cy="512" r="350"/><circle cx="720" cy="512" r="480"/><circle cx="720" cy="512" r="620"/><circle cx="720" cy="512" r="780"/>
+    </g>
+    <g fill="none" stroke="#5B5BD6" stroke-opacity=".55" stroke-width="1.6" stroke-linecap="round">
+      <circle cx="720" cy="512" r="350" stroke-dasharray="170 2030" transform="rotate(-24 720 512)"/>
+      <circle cx="720" cy="512" r="480" stroke-dasharray="200 2816" transform="rotate(-62 720 512)"/>
+      <circle cx="720" cy="512" r="620" stroke-dasharray="220 3675" transform="rotate(12 720 512)"/>
+    </g>
+  </svg>
+  <div class="glow"></div>
+  <section class="tp" id="tp" aria-label="Provinsi dengan kejadian terbanyak"></section>
+
+  <div class="nar">
+    <div class="tag"><i></i>38 provinsi · Aceh sampai Papua</div>
+    <h1>Satu peta untuk membaca <em>risiko</em> di seluruh Nusantara.</h1>
+    <p>Klik provinsi untuk masuk lebih dekat, atau pilih satu jenis bencana di sekeliling peta untuk menyorotnya di peta.</p>
+  </div>
+
+  <aside class="info" aria-live="polite">
+    <div id="iT"></div>
+    <div id="iS"></div>
+    <div class="hzl"><i></i><span id="hz"></span><small id="hn"></small></div>
+    <p class="hd" id="hd"></p>
+    <p class="lh">Pilih pulau atau bencana</p>
+    <div class="lg"><span>Sedikit</span><b></b><span>Banyak</span></div>
+    <p class="dn">Data resmi BNPB · jumlah kejadian tercatat</p>
+  </aside>
+
+  <div class="map" role="img" aria-label="Peta 38 provinsi Indonesia">
+    <svg viewBox="0 0 1000 440" aria-hidden="true">
+      <path id="shd" fill="rgba(20,22,28,.07)" transform="translate(0 14)"/>
+      <path id="sil" fill="var(--side)" stroke="var(--side)" stroke-width="1.2" transform="translate(0 5)"/>
+      <g id="prov"></g>
+      <path id="hs"/><path id="ht"/>
+    </svg>
+  </div>
+
+  <div id="nodes"></div>
+  <div id="ns" aria-live="polite"></div>
+  <button class="src st-btn" data-open="tren"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-5"/></svg><span>Statistik nasional<small>BNPB 2010–2025</small></span></button>
+
+  <div id="dc"></div>
+  <div class="co" id="co"></div>
+  <nav class="reg" id="reg" aria-label="Wilayah kepulauan"></nav>
+
+  <aside class="tcard" id="tr" aria-label="Tren tahunan provinsi"></aside>
+
+  <aside class="fp" id="fp" aria-label="Detail provinsi" aria-live="polite">
+    <div class="fh"><button class="bk" id="bk">‹ Kembali</button><div class="ys" id="yr" role="group" aria-label="Tahun data"></div></div>
+    <div class="tot"><b id="ft">0</b><span id="fy">kejadian sepanjang 2025</span></div>
+    <div id="fl"></div>
+    <p class="nt" id="nt"></p>
+  </aside>
+
+
+  <aside class="dr" id="dr" aria-label="Informasi">
+    <div class="dh"><b id="dt"></b><button class="x" aria-label="Tutup">×</button></div>
+    <div class="db">
+      <section data-s="tren" hidden id="trenS"></section>
+    </div>
+  </aside>
+</div>
+
+<script>
+const PROV=[
+["Aceh","sumatera","M18 18L18 15L15 15L18 18ZM28 94L34 96L39 101L43 101L42 98L34 94L34 92L27 87L25 91L28 94ZM57 104L56 105L60 108L60 105L57 104ZM80 54L81 51L74 48L72 39L64 31L58 33L50 30L40 32L34 30L30 24L24 21L20 21L15 24L15 30L22 45L43 67L51 69L61 86L66 88L67 100L70 104L73 103L77 106L79 102L76 97L77 91L73 88L74 83L73 79L75 77L70 68L72 63L76 62L76 55L80 54Z"],
+["Sumatera Utara","sumatera","M64 136L68 145L72 144L73 133L68 130L64 123L61 121L59 124L54 124L64 136ZM82 172L85 172L84 164L82 172ZM82 159L86 167L84 161L83 158L82 159ZM87 156L93 156L86 155L87 156ZM80 54L76 55L76 62L72 63L70 68L75 77L73 79L74 83L73 88L77 91L76 97L79 102L77 106L92 118L90 121L97 140L99 153L107 145L115 147L116 145L113 141L114 137L121 140L120 138L121 130L118 125L126 121L125 116L123 114L125 104L124 96L122 93L117 91L117 87L112 81L89 67L86 61L78 58L80 54Z"],
+["Sumatera Barat","sumatera","M102 198L94 181L89 182L87 188L92 198L98 202L101 202L100 198L102 201L102 198ZM120 227L122 225L116 220L117 228L120 227ZM113 214L110 209L108 208L109 214L114 217L113 214ZM122 233L127 240L125 236L127 235L127 232L121 226L122 233ZM121 140L114 137L113 141L116 145L115 147L107 145L99 153L103 153L111 159L113 166L124 179L126 189L129 191L131 198L135 206L135 211L139 219L145 214L141 199L148 199L153 195L153 189L157 186L156 182L140 171L138 166L135 167L133 160L135 157L134 156L135 153L132 154L127 151L127 148L123 148L121 143L123 142L121 140Z"],
+["Riau","sumatera","M121 140L123 142L121 143L123 148L127 148L127 151L132 154L135 153L134 156L135 157L133 160L135 167L138 166L140 171L156 182L159 180L165 181L173 186L181 177L188 178L190 176L190 171L197 167L191 163L194 159L198 159L196 151L188 145L183 149L179 141L172 140L169 139L164 134L163 125L155 118L147 117L145 109L139 103L133 103L133 108L129 106L125 102L124 96L125 104L123 114L125 116L126 121L118 125L121 130L120 138L121 140ZM172 140L178 139L181 142L182 139L175 134L168 137L169 138L172 140ZM179 135L184 138L179 131L175 130L173 134L175 133L179 135ZM170 135L172 134L171 131L169 132L170 135ZM164 128L165 134L168 136L170 135L169 132L170 128L165 124L164 124L164 128ZM162 123L166 124L170 128L169 121L160 120L162 123ZM147 114L149 117L153 116L155 111L153 107L147 109L147 114ZM185 146L187 144L185 141L184 145L185 146Z"],
+["Jambi","sumatera","M156 182L157 186L153 189L153 195L148 199L141 199L145 214L150 218L150 221L153 220L157 225L161 226L165 222L172 224L176 221L178 215L185 215L186 210L191 216L193 208L191 206L193 204L211 198L213 199L210 183L198 183L190 176L188 178L181 177L173 186L165 181L159 180L156 182Z"],
+["Sumatera Selatan","sumatera","M161 226L165 232L170 234L170 238L181 240L181 244L179 246L177 244L176 249L173 251L181 256L179 258L182 262L190 264L190 268L191 270L194 269L195 273L198 275L199 278L209 277L208 272L210 264L224 260L230 249L234 252L237 258L241 260L244 252L241 247L243 241L247 237L246 231L241 229L240 224L236 222L237 217L224 216L221 214L217 216L221 210L220 207L216 206L215 207L213 206L212 204L213 200L213 199L211 198L193 204L191 206L193 208L191 216L186 210L185 215L178 215L176 221L172 224L165 222L161 226ZM214 204L213 206L215 207L216 205L214 204Z"],
+["Bengkulu","sumatera","M164 290L168 292L168 290L162 287L161 288L164 290ZM139 219L145 225L152 237L165 248L166 255L188 275L194 278L198 275L195 273L194 269L191 270L190 268L190 264L182 262L179 258L181 256L173 251L176 249L177 244L179 246L181 244L181 240L170 238L170 234L165 232L161 226L157 225L153 220L150 221L150 218L145 214L139 219Z"],
+["Lampung","sumatera","M194 278L200 283L200 286L215 303L218 303L214 293L217 293L227 300L228 299L227 295L230 291L239 302L243 278L243 266L241 264L241 260L237 258L234 252L230 249L224 260L210 264L208 272L209 277L199 278L198 275L194 278Z"],
+["Kepulauan Bangka Belitung","sumatera","M232 210L235 209L240 211L240 216L243 219L244 227L254 231L256 234L260 234L260 232L257 229L260 223L263 221L251 217L246 197L242 195L239 196L241 203L237 201L239 199L236 196L232 197L232 202L226 208L230 211L232 210ZM263 229L260 231L263 232L263 229ZM275 230L276 227L274 228L275 230ZM280 237L284 235L284 233L287 238L289 237L293 228L293 225L287 221L280 221L277 229L279 230L279 237L280 237Z"],
+["Kepulauan Riau","sumatera","M191 143L192 140L189 137L188 141L191 143ZM190 134L188 131L188 134L190 134ZM201 135L199 134L201 136L201 135ZM201 134L205 133L205 130L200 131L201 134ZM208 139L206 140L208 142L208 139ZM207 137L204 135L206 139L207 137ZM208 170L210 175L212 173L213 174L215 170L212 167L209 169L209 167L208 170ZM207 133L209 134L212 133L211 136L214 139L216 136L215 129L209 130L207 133ZM213 165L217 163L220 166L223 165L220 162L218 163L214 158L211 163L213 165ZM240 88L241 86L238 84L239 90L240 88ZM249 82L251 83L250 80L249 82ZM309 98L311 97L308 96L309 98ZM289 65L293 67L290 67L290 70L294 69L296 65L296 62L292 55L287 61L289 65Z"],
+["DKI Jakarta","jawa","M260 307L259 309L261 312L264 313L265 307L260 307Z"],
+["Jawa Barat","jawa","M253 329L256 329L253 336L256 339L275 342L284 347L295 349L298 349L298 346L304 346L302 338L299 336L299 333L304 332L305 324L300 323L299 316L295 311L292 310L289 313L285 309L280 310L276 308L273 304L266 303L265 307L264 313L261 312L254 313L254 321L256 323L253 329Z"],
+["Jawa Tengah","jawa","M306 346L304 346L310 348L306 346ZM304 346L309 347L315 346L330 351L332 346L336 346L339 342L340 348L347 349L346 354L348 359L349 359L350 355L353 355L354 352L357 351L355 346L354 335L361 338L361 335L364 332L363 327L366 323L362 320L359 322L354 321L352 315L349 315L345 316L339 328L337 328L334 325L329 327L319 324L315 326L311 325L310 323L305 324L304 332L299 333L299 336L302 338L304 346Z"],
+["Daerah Istimewa Yogyakarta","jawa","M330 351L348 359L346 354L347 349L340 348L339 342L336 346L332 346L330 351Z"],
+["Jawa Timur","jawa","M349 359L360 360L366 363L368 360L386 365L399 361L414 369L420 368L423 370L422 372L428 372L422 367L425 349L417 346L416 344L410 347L397 347L391 344L390 336L386 334L384 325L375 327L372 323L366 323L363 327L364 332L361 335L361 338L354 335L355 346L357 351L354 352L353 355L350 355L349 359ZM385 301L388 301L388 298L385 298L385 301ZM400 365L399 366L402 365L400 365ZM387 333L405 335L407 332L412 332L413 331L418 329L413 326L391 326L387 330L387 333ZM444 328L448 328L441 325L440 328L445 329L444 328ZM453 332L452 333L455 334L455 332L453 332Z"],
+["Banten","jawa","M229 317L226 319L227 321L229 317ZM260 307L259 305L255 306L252 304L248 305L245 302L242 306L240 317L237 316L233 325L231 321L228 323L229 325L235 326L245 325L253 329L256 323L254 321L254 313L261 312L259 309L260 307Z"],
+["Bali","nusa","M435 365L440 371L438 374L440 374L442 370L451 363L440 355L433 358L424 356L427 363L435 365ZM446 372L450 373L448 370L446 372Z"],
+["Nusa Tenggara Barat","nusa","M460 375L465 377L466 374L467 374L467 376L470 376L468 374L473 362L465 359L460 363L458 365L459 372L454 372L458 376L460 375ZM478 380L480 381L503 375L508 369L509 375L516 373L519 374L519 372L515 372L519 370L524 372L525 368L522 369L521 361L517 361L514 367L514 361L510 360L506 363L503 357L498 356L493 359L505 367L506 370L496 371L491 364L487 365L481 363L474 370L475 374L473 378L478 380ZM493 358L489 358L489 362L490 363L493 358ZM523 357L521 358L522 360L524 358L523 357Z"],
+["Nusa Tenggara Timur","nusa","M531 364L529 369L531 372L533 366L531 364ZM535 369L534 372L536 374L538 369L536 370L535 369ZM528 397L536 397L546 409L552 411L560 405L555 396L552 393L548 394L547 390L544 390L541 385L538 388L528 387L521 390L520 392L522 395L528 397ZM543 374L555 374L559 376L560 374L564 377L571 376L572 373L580 375L588 372L593 372L603 368L602 364L604 365L607 361L604 355L601 359L604 358L604 360L596 365L595 368L591 369L585 365L577 365L575 369L563 362L552 360L547 361L545 364L543 363L540 365L538 372L540 375L543 374ZM580 418L585 416L585 414L582 414L578 417L580 418ZM603 426L611 423L615 420L615 414L611 417L613 418L602 422L603 426ZM605 368L610 364L606 364L604 368L605 368ZM606 364L613 363L613 360L609 359L606 364ZM614 410L615 411L615 408L617 407L616 406L613 410L614 410ZM617 411L623 412L631 407L638 406L649 394L651 390L649 383L653 382L653 379L651 377L649 380L647 377L638 383L635 390L632 387L630 388L629 386L623 390L619 401L619 404L623 404L617 408L616 411L617 411ZM613 367L618 367L620 364L626 360L623 358L621 360L619 359L618 363L617 362L618 360L615 360L616 362L611 366L613 367ZM630 367L634 362L635 358L630 363L629 361L627 362L626 364L628 364L630 367ZM638 364L652 362L652 359L651 357L641 358L640 357L638 357L636 360L639 359L635 364L638 364Z"],
+["Kalimantan Barat","kalimantan","M307 197L304 197L305 199L308 198L307 197ZM311 163L310 164L311 166L310 165L313 164L311 163ZM314 178L315 180L318 179L320 180L323 183L324 180L320 177L314 175L314 178ZM323 188L325 186L325 183L323 183L322 182L320 183L319 182L317 189L319 190L323 188ZM419 124L414 123L407 129L405 126L393 124L394 120L383 120L377 123L375 131L371 131L368 134L365 133L362 135L361 133L356 132L342 138L336 134L334 130L331 129L329 124L326 124L323 119L323 115L321 115L320 112L322 108L316 111L314 118L309 122L308 130L306 130L308 136L305 139L307 143L307 150L310 152L313 157L313 164L310 165L311 171L323 175L322 178L325 180L324 182L329 186L328 188L331 191L330 199L328 203L332 207L332 213L335 230L342 227L343 232L345 231L355 224L354 215L352 213L353 207L350 205L352 200L349 197L355 194L363 188L365 182L374 175L376 176L377 173L379 176L384 175L396 169L398 171L398 167L403 160L400 152L405 150L412 142L413 138L413 133L418 130L419 124Z"],
+["Kalimantan Tengah","kalimantan","M345 231L351 233L360 229L363 232L366 228L369 233L367 244L369 245L378 239L384 242L394 235L392 234L395 231L401 238L406 235L407 243L416 239L422 243L428 227L431 225L435 218L442 212L445 207L446 206L443 203L444 195L452 190L454 185L452 186L448 179L444 180L442 178L444 172L442 172L441 167L443 160L440 161L436 165L434 159L430 157L434 151L439 149L436 141L429 141L423 146L419 145L418 142L412 142L405 150L400 152L403 160L398 167L398 171L396 169L384 175L379 176L377 173L376 176L374 175L365 182L363 188L355 194L349 197L352 200L350 205L353 207L352 213L354 215L355 224L345 231Z"],
+["Kalimantan Selatan","kalimantan","M422 243L428 247L429 260L457 246L458 240L463 234L459 231L460 227L461 230L463 231L466 221L464 220L468 221L469 217L461 215L454 217L453 209L451 208L452 202L449 195L452 190L444 195L443 203L446 206L445 207L442 212L435 218L431 225L428 227L422 243ZM460 257L464 254L463 237L460 239L457 247L460 257ZM466 246L466 240L464 245L465 247L466 246Z"],
+["Kalimantan Timur","kalimantan","M412 142L418 142L419 145L423 146L429 141L436 141L439 149L434 151L430 157L434 159L436 165L440 161L443 160L441 167L442 172L444 172L442 178L444 180L448 179L452 186L454 185L452 190L449 195L452 202L451 208L453 209L454 217L461 215L469 217L470 211L466 212L465 210L467 209L467 202L463 202L469 197L469 194L474 192L473 184L475 190L476 189L484 180L485 172L488 170L488 164L490 159L491 148L495 140L498 138L501 140L498 131L501 136L508 139L517 139L521 134L498 114L496 110L494 109L493 105L500 105L502 103L500 99L495 102L492 97L487 96L484 98L483 96L480 96L478 99L474 97L473 100L468 99L468 103L464 104L465 106L462 108L461 116L458 121L452 128L447 128L444 131L438 129L434 124L430 126L427 124L423 121L419 124L418 130L413 133L413 138L412 142ZM487 176L485 174L488 180L487 176ZM488 174L485 173L489 175L488 174ZM489 169L490 167L489 170L489 169ZM498 106L496 105L499 107L498 106Z"],
+["Kalimantan Utara","kalimantan","M427 124L430 126L434 124L438 129L444 131L447 128L452 128L458 121L461 116L462 108L465 106L464 104L468 103L468 99L473 100L474 97L478 99L480 96L483 96L484 98L487 96L492 97L495 102L500 99L493 91L493 86L491 86L492 84L488 84L488 81L486 81L490 78L483 73L484 71L479 71L488 70L489 68L493 70L496 68L493 67L495 67L494 64L488 63L488 58L490 59L491 57L489 57L484 52L479 53L469 52L467 54L465 52L461 52L459 54L455 52L448 63L450 75L448 77L448 82L445 86L442 84L438 90L439 90L438 95L441 97L431 105L434 112L430 114L430 119L427 124ZM484 71L484 73L490 74L484 71ZM491 78L493 80L493 75L490 75L491 78ZM490 60L488 61L489 63L493 64L490 60ZM495 60L493 58L491 59L493 62L495 60ZM498 60L498 57L493 57L498 60Z"],
+["Sulawesi Utara","sulawesi","M616 151L639 147L641 139L646 135L651 125L654 123L652 117L649 116L645 120L645 123L639 126L640 130L636 130L634 134L626 138L609 136L612 139L612 141L618 144L616 151ZM657 93L658 94L658 90L657 93ZM660 74L662 76L663 75L661 69L658 68L660 74ZM687 67L688 67L686 65L687 67ZM685 61L687 61L690 54L688 49L686 48L685 53L687 56L685 61Z"],
+["Sulawesi Tengah","sulawesi","M533 179L534 186L530 191L536 194L536 196L540 202L540 208L544 206L549 208L551 207L558 213L566 214L566 217L574 217L581 223L578 229L591 234L592 238L595 236L590 232L592 229L585 225L581 214L576 211L573 205L571 207L570 202L578 206L582 200L593 195L602 181L609 179L612 184L614 184L616 176L612 173L608 172L601 175L606 177L589 178L587 182L584 183L579 182L577 178L571 184L566 193L560 191L557 193L553 183L551 181L549 182L544 175L543 160L545 154L550 147L556 146L566 149L571 147L571 144L567 142L568 139L582 134L585 136L589 133L576 133L573 130L574 127L569 129L562 125L560 126L560 133L556 136L555 140L551 139L549 134L547 139L543 141L544 146L540 147L540 153L538 153L540 157L539 161L534 159L536 161L539 162L537 170L540 179L537 175L533 179ZM578 172L579 170L583 172L583 169L580 169L578 172ZM585 169L586 167L582 168L585 169ZM593 167L593 165L590 164L593 167ZM604 197L609 190L610 195L608 197L612 199L612 194L616 195L618 189L614 188L612 192L610 186L605 187L602 194L604 197ZM617 200L619 200L618 195L617 200Z"],
+["Sulawesi Selatan","sulawesi","M562 336L559 336L565 336L562 336ZM559 332L556 329L556 332L559 332ZM552 309L553 317L555 306L553 299L552 309ZM531 244L531 249L535 255L535 264L532 274L532 278L529 288L530 294L536 297L541 294L545 295L549 293L552 295L548 284L549 277L552 272L550 266L550 258L552 250L552 238L548 235L547 231L559 222L566 224L564 228L566 226L572 232L578 229L581 223L574 217L566 217L566 214L558 213L551 207L549 208L544 206L540 208L536 214L537 221L537 224L534 225L535 234L530 237L531 244ZM566 339L567 338L566 337L566 339Z"],
+["Sulawesi Tenggara","sulawesi","M582 288L584 292L586 291L586 285L584 282L582 283L582 288ZM564 228L566 230L565 236L561 242L561 244L571 255L577 257L574 272L578 277L586 278L587 276L587 270L590 267L598 265L601 268L599 264L603 267L604 265L603 257L600 260L599 256L597 255L599 253L596 253L595 250L589 246L591 245L591 240L593 242L592 238L591 234L578 229L572 232L566 226L564 228ZM592 290L593 288L595 290L596 287L596 291L599 289L598 284L601 278L600 271L592 276L593 282L591 288L592 290ZM597 293L599 297L600 296L602 297L604 294L604 291L611 288L607 284L605 284L607 274L609 273L611 277L608 265L604 269L601 281L601 285L602 286L599 288L597 293ZM619 290L620 287L618 286L619 290ZM605 258L609 262L612 258L607 255L605 258Z"],
+["Gorontalo","sulawesi","M571 147L575 145L581 148L594 146L608 146L612 151L616 151L618 144L612 141L612 139L609 136L605 135L603 138L595 133L589 133L585 136L582 134L568 139L567 142L571 144L571 147Z"],
+["Sulawesi Barat","sulawesi","M533 179L528 189L527 199L529 204L526 207L524 219L520 223L518 222L516 226L516 228L519 229L517 233L519 244L521 245L528 242L531 244L530 237L535 234L534 225L537 224L537 221L536 214L540 208L540 202L536 196L536 194L530 191L534 186L533 179Z"],
+["Maluku","maluku","M716 360L718 360L717 359L715 359L716 360ZM714 359L715 357L708 356L709 359L714 359ZM666 354L672 351L680 353L682 349L688 347L683 343L674 347L669 345L666 354ZM699 345L702 342L699 341L699 345ZM727 333L726 331L724 333L726 334L727 333ZM715 250L719 248L718 246L720 247L720 244L711 248L713 250L718 247L715 250ZM722 247L725 245L722 244L722 247ZM727 246L728 246L728 244L725 244L727 246ZM685 252L696 247L697 241L693 240L692 238L694 237L687 233L671 236L670 240L674 246L685 252ZM705 239L702 239L705 240L705 239ZM712 232L713 230L709 232L712 232ZM772 362L780 357L775 357L772 362ZM746 351L750 355L753 351L748 348L746 351ZM774 341L773 343L776 343L774 341ZM711 243L712 244L715 235L717 233L717 237L718 236L723 243L727 242L732 236L733 237L733 240L746 243L745 239L754 240L756 243L773 253L774 246L772 241L769 241L768 235L763 231L756 231L745 226L737 231L735 226L717 228L714 230L715 233L709 235L712 240L711 243ZM777 347L779 345L776 347L777 347ZM779 340L780 339L776 341L779 340ZM784 352L790 344L790 335L792 334L791 332L788 333L786 337L782 341L780 346L782 347L779 346L779 354L783 352L783 354L784 352ZM786 257L786 255L784 255L786 257ZM797 333L792 333L797 335L797 333ZM814 303L815 301L813 295L811 296L814 303ZM816 304L821 295L822 287L816 304ZM846 326L852 319L843 309L843 315L845 317L843 316L842 324L845 327L846 326ZM847 312L848 310L845 308L845 305L843 305L843 307L847 312ZM850 311L848 314L851 316L852 313L850 311ZM848 305L855 301L855 299L854 298L853 297L852 296L852 294L850 294L848 298L845 298L849 299L847 303L848 305ZM853 316L852 314L851 318L853 316ZM847 308L854 314L856 312L857 307L852 303L850 305L846 306L847 308ZM853 294L855 293L851 290L851 294L853 294ZM856 322L855 319L854 323L856 322ZM856 316L854 316L855 318L857 318L856 316ZM856 301L854 303L856 304L856 301ZM852 296L854 298L855 298L857 296L852 294L852 296ZM859 312L857 314L858 316L859 312Z"],
+["Maluku Utara","maluku","M672 218L669 212L670 208L668 206L668 212L670 218L672 218ZM664 205L677 203L656 203L658 206L664 205ZM637 208L646 204L655 204L656 202L654 200L653 202L652 199L650 202L642 198L636 199L635 204L637 208ZM697 177L699 178L696 173L695 177L697 177ZM696 171L698 166L695 165L694 170L696 171ZM698 140L700 139L698 137L698 140ZM702 189L706 190L706 188L702 187L702 189ZM699 172L702 174L702 178L705 176L708 179L711 177L704 173L706 170L704 166L701 169L699 167L699 172ZM701 200L713 200L716 198L705 191L701 193L700 198L701 200ZM701 133L705 139L703 145L707 151L706 165L710 167L713 175L722 180L714 169L710 158L710 151L711 147L714 147L731 153L727 150L727 145L720 142L717 139L727 132L728 120L723 121L716 125L715 128L717 130L713 132L710 138L706 137L705 134L711 130L713 127L713 116L709 113L714 106L712 105L704 116L700 128L701 133ZM717 103L719 109L724 108L727 98L725 94L717 103Z"],
+["Papua Tengah","papua","M859 262L866 267L881 268L919 285L923 275L921 272L924 270L922 268L925 261L923 263L922 261L920 261L920 259L924 260L926 253L933 252L931 250L931 247L927 246L927 237L926 236L927 231L923 233L912 233L907 235L904 239L903 238L905 237L902 235L903 241L902 241L901 238L899 238L897 235L897 237L895 238L895 233L890 232L887 227L883 224L881 230L872 240L869 241L864 241L859 238L858 229L855 231L854 225L853 227L853 235L856 240L860 242L862 246L866 246L862 249L864 255L859 262Z"],
+["Papua Selatan","papua","M943 357L940 358L938 362L945 363L943 357ZM920 364L935 362L940 357L943 357L943 355L945 356L945 351L947 350L949 343L941 338L930 341L923 350L918 361L918 364L920 364ZM939 323L940 326L942 325L939 323ZM941 320L940 322L944 325L946 324L944 324L943 322L941 320ZM919 285L920 289L923 289L928 293L926 295L927 298L931 301L934 313L943 322L943 324L946 324L946 325L938 327L941 331L940 335L949 343L947 350L945 352L945 355L944 356L945 360L951 356L954 359L967 356L987 380L990 381L990 326L988 326L986 321L989 312L989 289L976 285L973 281L969 281L971 284L969 285L968 282L967 286L964 284L966 285L968 282L948 280L950 274L948 276L944 273L938 273L938 275L934 276L932 272L930 273L927 270L924 270L921 272L923 275L919 285Z"],
+["Papua","papua","M859 186L861 183L860 185L860 182L858 181L857 184L859 186ZM872 176L875 180L878 176L869 174L872 178L872 176ZM872 199L888 205L902 202L871 197L872 199ZM878 180L880 187L886 188L891 185L886 184L879 175L877 178L878 180ZM883 224L887 227L890 232L895 233L895 238L897 237L897 235L899 238L901 238L902 241L903 241L902 235L905 237L903 238L904 239L907 235L912 233L923 233L927 231L926 236L927 237L928 231L931 233L933 230L937 230L938 230L938 237L940 239L941 236L945 238L944 242L948 238L950 242L957 243L959 249L963 244L968 248L974 248L975 250L983 251L983 253L986 253L985 255L980 255L980 252L977 250L977 254L981 259L983 257L982 255L989 256L989 222L983 222L983 219L976 217L975 218L970 215L963 216L944 206L940 202L927 197L924 194L907 202L906 203L909 208L908 209L899 213L891 212L888 222L883 224Z"],
+["Papua Pegunungan","papua","M924 270L927 270L930 273L932 272L934 276L938 275L938 273L944 273L948 276L950 274L948 280L968 282L966 285L964 284L967 286L968 282L969 285L971 284L969 281L973 281L976 285L989 289L989 256L982 255L983 257L981 259L977 254L977 250L980 252L980 255L985 255L986 253L983 253L983 251L975 250L974 248L968 248L963 244L959 249L957 243L950 242L948 238L944 242L945 238L941 236L940 239L938 237L938 230L937 230L933 230L931 233L928 231L927 237L927 246L931 247L931 250L933 252L926 253L924 260L920 259L920 261L922 261L923 263L925 261L922 268L924 270Z"],
+["Papua Barat","papua","M826 258L829 262L831 262L826 258ZM835 221L834 222L835 222L836 223L836 221L835 221ZM811 212L812 214L818 214L823 212L832 213L839 209L840 213L839 215L840 216L840 219L838 219L837 218L836 219L836 223L833 223L833 220L828 224L827 219L824 217L813 227L810 224L803 223L797 226L799 226L798 227L800 230L804 230L808 232L812 239L815 238L815 242L818 245L813 248L817 258L825 258L829 252L828 248L832 244L830 241L833 242L833 234L837 230L838 233L833 237L834 241L832 243L834 248L837 249L837 245L839 252L843 250L844 252L843 254L847 257L846 255L848 255L848 253L851 257L855 254L861 255L855 255L855 257L854 259L859 262L864 255L862 249L866 246L862 246L860 242L856 240L853 235L853 227L854 225L854 219L852 218L850 228L843 211L842 199L846 191L841 182L843 180L840 176L829 176L828 187L825 187L820 191L817 190L814 203L811 205L813 209L811 212ZM837 217L835 218L836 219L837 218L837 217ZM839 215L837 216L839 217L839 215ZM843 254L842 255L844 256L843 254ZM844 205L846 201L844 203L844 205ZM849 209L848 207L848 211L849 209Z"],
+["Papua Barat Daya","papua","M751 188L755 187L750 187L751 188ZM752 203L750 205L758 208L765 207L763 205L765 203L763 199L752 203ZM768 170L770 169L766 169L765 171L768 170ZM770 180L775 177L766 178L765 180L770 180ZM771 189L774 191L776 191L778 184L777 181L769 182L771 189ZM760 163L762 165L766 164L767 168L768 166L770 166L771 169L775 166L771 166L769 161L776 167L779 166L782 168L784 165L779 160L772 159L761 161L765 163L764 164L760 163ZM792 194L789 195L791 196L792 195L792 194ZM829 176L818 169L807 167L801 169L795 176L782 179L782 185L775 193L783 195L784 191L786 195L792 193L792 195L792 197L795 197L796 200L798 200L796 203L797 206L800 208L799 209L805 214L811 212L813 209L811 205L814 203L817 190L820 191L825 187L828 187L829 176Z"]
+];
+const REG=[['sumatera','Sumatera'],['jawa','Jawa'],['nusa','Bali & Nusa Tenggara'],['kalimantan','Kalimantan'],['sulawesi','Sulawesi'],['maluku','Maluku'],['papua','Papua']];
+// [id, label, warna, x%, y%, deskripsi, ikon]
+const HAZ=[
+['banjir','Banjir','#C8452B',7.5,36,'Genangan akibat luapan sungai atau hujan deras.','<path d="M2 8c2-1.8 4-1.8 6 0s4 1.8 6 0 4-1.8 6 0"/><path d="M2 13c2-1.8 4-1.8 6 0s4 1.8 6 0 4-1.8 6 0"/><path d="M2 18c2-1.8 4-1.8 6 0s4 1.8 6 0 4-1.8 6 0"/>'],
+['pasang','Pasang laut','#D4502F',6,47.5,'Air laut naik ke daratan pesisir saat pasang tinggi (rob).','<path d="M2 16c2-1.8 4-1.8 6 0s4 1.8 6 0 4-1.8 6 0"/><path d="M12 3v8M9 6l3-3 3 3"/>'],
+['gempa','Gempa bumi','#E8553A',4.5,59,'Getaran akibat pergerakan lempeng di dalam bumi.','<path d="M2 12h4l2-6 3 12 3-9 2 3h6"/>'],
+['longsor','Tanah longsor','#D95F3B',6.5,70.5,'Pergerakan massa tanah dan batuan di lereng.','<path d="M3 20l7-11 4 6 3-4 4 9z"/><circle cx="7" cy="4.5" r="1"/><circle cx="12" cy="3.5" r="1"/>'],
+['gunung','Gunung api','#EE6A45',12,82,'Erupsi dari salah satu gunung api aktif Indonesia.','<path d="M3 20l5-9h8l5 9z"/><path d="M9 8l-1-3M12 7V3M15 8l1-3"/>'],
+['tsunami','Tsunami','#C44A33',92.5,36,'Gelombang laut besar, biasanya dipicu gempa di bawah laut.','<path d="M2 17c4 0 5-3 5-6 0-3 2.5-6 6-6 3 0 5.5 2.2 5.5 5 0 2-1.5 3.5-3.5 3.5-1.6 0-2.8-1.1-2.8-2.5"/><path d="M2 21h20"/>'],
+['karhutla','Karhutla','#F0714B',95.5,51.3,'Kebakaran di hutan dan lahan, kerap terjadi saat kemarau.','<path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-6 1-9z"/>'],
+['kering','Kekeringan','#DE6A44',94,66.7,'Kekurangan air berkepanjangan saat curah hujan rendah.','<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>'],
+['cuaca','Cuaca ekstrem','#CF5A3C',88,82,'Angin kencang, puting beliung, dan hujan lebat mendadak.','<path d="M3 8h10a3 3 0 1 0-3-3"/><path d="M3 12h15a3 3 0 1 1-3 3"/><path d="M3 16h7a2.5 2.5 0 1 1-2.5 2.5"/>']
+];
+const DATA={"2024":{"ACEH":[47,0,0,2,0,0,35,1,14],"SUMATERA UTARA":[120,0,0,15,0,0,170,2,43],"SUMATERA BARAT":[64,3,0,10,3,0,7,1,10],"RIAU":[53,2,0,1,0,0,10,0,2],"JAMBI":[44,0,0,2,0,0,79,0,7],"SUMATERA SELATAN":[69,0,0,1,0,0,192,0,9],"BENGKULU":[9,0,1,4,0,0,1,0,3],"LAMPUNG":[28,0,0,0,0,0,7,1,24],"KEPULAUAN BANGKA BELITUNG":[2,0,0,0,0,0,19,0,3],"KEPULAUAN RIAU":[4,0,0,1,0,0,58,0,16],"DKI JAKARTA":[17,0,0,1,0,0,0,0,5],"JAWA BARAT":[140,1,5,77,0,0,16,25,193],"JAWA TENGAH":[78,0,3,19,0,0,38,22,71],"DAERAH ISTIMEWA YOGYAKARTA":[0,0,1,5,0,0,15,3,38],"JAWA TIMUR":[121,0,2,14,0,0,145,11,141],"BANTEN":[66,0,1,7,0,0,4,2,17],"BALI":[2,0,1,4,0,0,11,0,17],"NUSA TENGGARA BARAT":[44,2,1,1,0,0,3,9,17],"NUSA TENGGARA TIMUR":[13,4,0,5,3,0,14,1,13],"KALIMANTAN BARAT":[56,0,0,0,0,0,10,0,3],"KALIMANTAN TENGAH":[39,0,0,0,0,0,17,0,0],"KALIMANTAN SELATAN":[15,0,0,1,0,0,6,0,4],"KALIMANTAN TIMUR":[29,1,0,3,0,0,107,0,4],"KALIMANTAN UTARA":[5,0,0,2,0,0,3,0,0],"SULAWESI UTARA":[17,1,0,1,1,0,0,0,3],"SULAWESI TENGAH":[85,0,2,1,0,0,2,0,4],"SULAWESI SELATAN":[91,2,0,14,0,0,3,10,45],"SULAWESI TENGGARA":[17,0,0,0,0,0,0,0,3],"GORONTALO":[31,0,0,2,0,0,0,1,1],"SULAWESI BARAT":[15,0,0,3,0,0,0,0,4],"MALUKU":[18,3,0,3,0,0,1,0,11],"MALUKU UTARA":[40,3,1,4,1,0,0,0,6],"PAPUA":[15,2,0,0,0,0,0,0,2],"PAPUA BARAT":[15,2,0,1,0,0,0,0,0],"PAPUA SELATAN":[2,1,0,0,0,0,0,0,0],"PAPUA TENGAH":[5,0,0,0,0,0,0,0,0],"PAPUA PEGUNUNGAN":[0,0,0,3,0,0,0,0,0],"PAPUA BARAT DAYA":[4,0,0,0,0,0,0,0,0]},"2025":{"ACEH":[48,1,1,3,0,0,94,0,21],"SUMATERA UTARA":[97,1,1,6,0,0,155,8,68],"SUMATERA BARAT":[37,2,0,5,0,0,75,1,15],"RIAU":[104,0,0,0,0,0,287,0,5],"JAMBI":[29,0,0,1,0,0,64,0,9],"SUMATERA SELATAN":[71,0,0,3,0,0,47,0,14],"BENGKULU":[15,1,1,2,0,0,2,0,0],"LAMPUNG":[106,0,1,3,0,0,0,0,43],"KEPULAUAN BANGKA BELITUNG":[20,0,0,1,0,0,15,0,21],"KEPULAUAN RIAU":[8,1,0,3,0,0,75,0,22],"DKI JAKARTA":[31,0,0,0,0,0,0,0,5],"JAWA BARAT":[229,0,4,111,0,0,2,5,235],"JAWA TENGAH":[140,0,1,45,0,0,19,11,119],"DAERAH ISTIMEWA YOGYAKARTA":[10,0,0,9,0,0,4,0,32],"JAWA TIMUR":[184,0,3,26,3,0,25,3,146],"BANTEN":[93,0,0,8,0,0,1,1,12],"BALI":[9,4,1,4,0,0,8,0,26],"NUSA TENGGARA BARAT":[95,1,0,2,0,0,2,7,25],"NUSA TENGGARA TIMUR":[43,1,0,15,3,0,23,0,10],"KALIMANTAN BARAT":[28,0,0,0,0,0,9,0,2],"KALIMANTAN TENGAH":[58,0,0,2,0,0,151,0,3],"KALIMANTAN SELATAN":[46,2,0,0,0,0,220,0,8],"KALIMANTAN TIMUR":[53,1,0,16,0,0,22,1,3],"KALIMANTAN UTARA":[15,0,2,2,0,0,23,0,0],"SULAWESI UTARA":[30,0,1,3,0,0,1,0,3],"SULAWESI TENGAH":[103,7,4,5,0,0,2,0,14],"SULAWESI SELATAN":[63,2,0,14,0,0,3,0,65],"SULAWESI TENGGARA":[43,1,3,6,0,0,0,0,6],"GORONTALO":[65,0,0,1,0,1,0,0,4],"SULAWESI BARAT":[15,0,0,7,0,0,0,0,5],"MALUKU":[32,1,2,12,0,0,0,0,4],"MALUKU UTARA":[59,2,0,5,1,0,0,0,11],"PAPUA":[12,0,3,2,0,0,0,0,0],"PAPUA BARAT":[7,0,0,0,0,0,0,0,2],"PAPUA SELATAN":[1,0,0,0,0,0,0,0,0],"PAPUA TENGAH":[1,0,1,2,0,0,0,0,0],"PAPUA PEGUNUNGAN":[6,0,0,4,0,0,0,0,0],"PAPUA BARAT DAYA":[3,0,0,2,0,0,0,0,0]}},TREN={"ACEH":[53,45,78,66,57,90,83,91,218,180,364,279,222,236,99,168],"SUMATERA UTARA":[39,43,64,66,52,63,73,81,94,71,150,173,107,217,350,336],"SUMATERA BARAT":[56,46,91,52,58,89,69,61,96,103,241,212,78,136,98,135],"RIAU":[9,13,11,27,29,18,25,37,54,58,55,148,96,260,68,396],"JAMBI":[31,33,57,29,60,14,38,29,28,28,104,99,9,93,132,103],"SUMATERA SELATAN":[50,36,83,67,64,45,61,61,77,95,90,92,103,85,271,135],"BENGKULU":[3,11,11,15,15,31,19,11,11,25,37,45,45,38,18,21],"LAMPUNG":[43,25,38,32,32,20,18,9,33,51,43,76,71,74,60,153],"KEPULAUAN BANGKA BELITUNG":[0,1,0,15,13,12,18,8,117,22,26,40,47,125,24,57],"KEPULAUAN RIAU":[0,4,12,35,38,5,16,5,9,21,64,107,11,105,79,109],"DKI JAKARTA":[14,9,10,29,23,5,43,15,33,6,22,29,17,17,23,36],"JAWA BARAT":[355,187,239,278,553,217,306,319,356,699,942,1358,825,844,457,586],"JAWA TENGAH":[450,467,341,183,340,390,600,1071,585,926,1021,622,488,629,231,335],"DAERAH ISTIMEWA YOGYAKARTA":[20,24,69,39,24,29,38,25,123,29,36,26,29,177,62,55],"JAWA TIMUR":[288,278,167,234,237,302,406,434,457,622,251,366,400,136,434,390],"BANTEN":[34,28,33,28,38,63,31,39,68,65,96,113,81,62,97,115],"BALI":[16,32,53,28,18,6,19,29,145,56,93,94,35,67,35,52],"NUSA TENGGARA BARAT":[24,23,35,52,18,17,26,71,75,56,89,112,47,156,77,132],"NUSA TENGGARA TIMUR":[39,39,26,76,41,27,19,13,185,38,17,116,45,113,53,95],"KALIMANTAN BARAT":[22,15,8,9,15,19,22,27,132,43,82,69,57,116,69,39],"KALIMANTAN TENGAH":[21,10,8,17,11,8,15,50,59,76,89,94,77,202,56,214],"KALIMANTAN SELATAN":[39,31,66,62,13,12,21,63,96,154,193,272,107,539,26,276],"KALIMANTAN TIMUR":[44,21,46,49,57,60,189,39,32,54,115,119,46,252,144,96],"KALIMANTAN UTARA":[2,0,4,5,3,7,15,2,1,21,76,60,22,75,10,42],"SULAWESI UTARA":[11,21,14,11,19,18,16,38,23,18,20,48,38,32,23,38],"SULAWESI TENGAH":[29,14,12,17,31,13,12,20,10,23,54,149,99,105,94,135],"SULAWESI SELATAN":[107,78,48,50,54,47,56,71,187,164,163,186,145,267,165,147],"SULAWESI TENGGARA":[89,13,99,29,14,8,13,28,25,20,16,73,26,12,20,59],"GORONTALO":[20,17,17,18,8,19,11,29,17,6,25,39,33,53,35,71],"SULAWESI BARAT":[18,19,8,13,7,6,9,12,13,11,11,45,35,60,22,27],"MALUKU":[9,19,14,13,9,18,5,21,9,36,27,67,33,49,36,51],"MALUKU UTARA":[5,8,4,3,4,7,7,32,20,19,19,37,45,43,55,78],"PAPUA":[3,4,8,11,5,5,1,12,10,9,4,23,7,11,19,17],"PAPUA BARAT":[1,1,1,4,1,0,2,3,5,9,3,8,13,9,18,9],"PAPUA SELATAN":[0,0,0,1,0,2,0,0,2,0,1,0,0,2,3,1],"PAPUA TENGAH":[3,5,4,3,3,1,3,4,0,2,4,4,0,1,5,4],"PAPUA PEGUNUNGAN":[0,0,0,1,0,0,1,4,0,5,0,3,1,2,3,10],"PAPUA BARAT DAYA":[0,2,2,0,0,1,2,4,2,1,6,0,8,5,4,5]},NAS=[[1060,573,584,725,596,525,824,979,871,784,1518,1794,1531,1255,1420,2009],[12,17,29,36,20,7,22,11,53,18,43,91,26,33,27,28],[15,11,15,9,14,26,13,20,28,30,18,24,28,31,15,28],[402,329,287,294,598,502,599,848,615,719,1054,1321,634,591,207,330],[4,4,7,8,5,10,7,6,58,7,7,1,1,4,8,7],[1,1,1,0,2,0,0,0,2,0,0,0,0,0,0,1],[4,24,49,26,101,46,178,96,527,746,597,579,252,2051,973,1329],[43,219,263,66,7,7,0,19,130,123,26,15,4,174,89,37],[404,441,545,502,618,571,663,887,1113,1387,1386,1577,1068,1261,733,958]],RING=[1945,1619,1780,1666,1961,1694,2306,2866,3397,3814,4649,5402,3544,5400,3472,4727];let YEAR='all';const YL=()=>YEAR==='all'?'2024–2025':YEAR;
+let LY='all',HM=false,allHeat=false;const LYL=()=>LY==='all'?'2010–2025':LY,SUMA=a=>a.reduce((x,y)=>x+y,0),ptot=e=>{const t=TREN[e.dataset.n.toUpperCase()]||[];return LY==='all'?SUMA(t):t[LY-2010]||0},ntot=()=>LY==='all'?SUMA(RING):RING[LY-2010];
+const $=s=>document.querySelector(s),NS='http://www.w3.org/2000/svg',root=document.documentElement;
+const rl=Object.fromEntries(REG),cnt={};
+PROV.forEach(p=>cnt[p[1]]=(cnt[p[1]]||0)+1);
+const allD=PROV.map(p=>p[2]).join('');
+$('#sil').setAttribute('d',allD);$('#shd').setAttribute('d',allD);
+const g=$('#prov');
+PROV.forEach(p=>{const e=document.createElementNS(NS,'path');e.setAttribute('d',p[2]);e.setAttribute('class','prov');e.dataset.n=p[0];e.dataset.r=p[1];g.append(e)});
+const provEls=[...g.children],T=$('#iT'),S=$('#iS'),ht=$('#ht'),hs=$('#hs');
+let region='all',cur=null,hz=HAZ[2],foc=null,READY=false;
+function info(){
+  if(cur){T.textContent=cur.dataset.n;S.textContent=rl[cur.dataset.r]+(READY?(HF?' · '+dm(cur)[HF[0]]+' '+HF[1].toLowerCase()+' · 2024–2025':' · '+ptot(cur).toLocaleString('id-ID')+' kejadian · 2010–2025'):'')}
+  else if(region!=='all'){T.textContent=rl[region];S.textContent=cnt[region]+' provinsi'}
+  else{T.textContent='';S.textContent=''}
+}
+function over(e){const t=e.target;if(foc||!t.classList.contains('prov')||t===cur)return;cur=t;const d=t.getAttribute('d');ht.setAttribute('d',d);hs.setAttribute('d',d);info()}
+g.addEventListener('mouseover',over);g.addEventListener('click',e=>{if(e.target.classList.contains('prov'))focusProv(e.target)});
+g.addEventListener('mouseleave',()=>{cur=null;ht.removeAttribute('d');hs.removeAttribute('d');info()});
+
+const nodes=$('#nodes');
+HAZ.forEach(h=>{
+  const b=document.createElement('button');b.className='node';
+  b.style.cssText=`--x:${h[3]}%;--y:${h[4]}%;--c:${h[2]}`;
+  b.setAttribute('aria-label',h[1]);
+  b.innerHTML=`<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">${h[6]}</svg><span>${h[1]}</span>`;
+  b.onclick=()=>pickH(h);h.b=b;nodes.append(b);
+});
+function pickH(h){hz=h;root.style.setProperty('--hz',h[2]);HAZ.forEach(x=>x.b.setAttribute('aria-pressed',x===h));$('#hz').textContent=h[1];$('#hd').textContent=h[5];if(foc){renderFocus();markDisc()}else if(READY){HF=HF===h?null:h;HAZ.forEach(x=>x.b.setAttribute('aria-pressed',x===HF));natCard();heat();markHome();info()}}
+pickH(hz);
+
+const rb=$('#reg');
+[['all','Semua'],...REG].forEach(r=>{
+  const b=document.createElement('button');b.textContent=r[1];b.setAttribute('aria-pressed',r[0]==='all');
+  b.onclick=()=>{
+    allHeat=r[0]==='all'?(region==='all'?!allHeat:true):false;region=r[0];[...rb.children].forEach(x=>x.setAttribute('aria-pressed',x===b));
+    paint();heat();
+    info();
+  markHome();};rb.append(b);
+});
+info();
+
+const D=$('#dr'),secs=[...D.querySelectorAll('[data-s]')],TT={sumber:'Sumber data',tren:'Statistik nasional'};
+function closeD(){D.classList.remove('open')}
+function openD(s){if(!s)return closeD();secs.forEach(x=>x.hidden=x.dataset.s!==s);$('#dt').textContent=TT[s];D.classList.add('open');D.querySelector('.x').focus()}
+D.querySelector('.x').onclick=closeD;
+addEventListener('keydown',e=>{if(e.key==='Escape')D.classList.contains('open')?closeD():unfocus()});
+document.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>openD(b.dataset.open));
+// ---------- Fokus provinsi ----------
+const svg=$('.map svg'),app=$('.app'),tagEl=$('.nar .tag'),h1=$('.nar h1'),pTxt=$('.nar p'),sil=$('#sil'),shd=$('#shd');
+const HOME=[0,0,1000,440],N0={tag:tagEl.innerHTML,h:h1.innerHTML,p:pTxt.textContent},FA=1000/600;
+let vb=HOME.slice(),vbT=HOME,raf=0,FD={};
+function paint(){const m=region!=='all';provEls.forEach(e=>{e.classList.toggle('on',m&&e.dataset.r===region);e.classList.toggle('dim',m&&e.dataset.r!==region)})}
+// jumlah kejadian per provinsi per jenis (data BNPB 2024–2025)
+const seed=s=>{let h=2166136261;for(const c of s)h=Math.imul(h^c.charCodeAt(0),16777619);return h>>>0};
+const rnd=a=>()=>{a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+function dataProv(el){const n=el.dataset.n.toUpperCase(),ys=YEAR==='all'?[2024,2025]:[YEAR];return Object.fromEntries(HAZ.map((x,k)=>[x[0],ys.reduce((a,y)=>a+((DATA[y][n]||[])[k]||0),0)]))}
+
+const pop2=u=>{u=Math.min(1,Math.max(0,u));return 1+2.2*Math.pow(u-1,3)+1.2*Math.pow(u-1,2)};   // pop dengan sedikit membal
+function swapIn(){if(RM)return;[tagEl,h1,pTxt].forEach(e=>{e.style.animation='none';void e.offsetWidth;e.style.animation='tx .55s cubic-bezier(.2,.7,.2,1) both'})}
+function resetYear(){if(YEAR==='all')return;YEAR='all';DMC.clear();AVG=null;[...$('#yr').children].forEach((x,i)=>x.setAttribute('aria-pressed',i===0))}
+function focusProv(el){
+  if(foc===el)return;
+  foc=el;cur=null;ht.removeAttribute('d');hs.removeAttribute('d');
+  {const mb=MAPEL.getBoundingClientRect(),pb=el.getBoundingClientRect();MAPEL.style.transformOrigin=(pb.left+pb.width/2-mb.left)+'px '+(pb.top+pb.height/2-mb.top)+'px'}   // peta zoom ke provinsi yang diklik
+  app.classList.add('focus');nodes.inert=rb.inert=true;
+  tagEl.innerHTML='<i></i>Provinsi · '+rl[el.dataset.r];h1.innerHTML='<em class="nm">'+el.dataset.n+'</em>';
+  pTxt.style.display='';pTxt.textContent='Data kejadian BNPB '+YL()+'. Bencana terbanyak tampil paling besar; klik diorama untuk melihat angkanya.';
+  resetYear();FD=dataProv(el);clearTimeout(ut);XT=0;NOUT=performance.now();clearDiscs(1);pickH(HAZ.reduce((a,h)=>FD[h[0]]>FD[a[0]]?h:a,HAZ[0]));swapIn();
+  setTimeout(()=>{if(foc===el)showDiscs()},300);$('#bk').focus({preventScroll:true});
+}
+function unfocus(){
+  if(!foc)return;
+  resetYear();foc=null;LV=1;CO.classList.remove('on');DC.style.opacity=0;XT=performance.now();app.classList.add('leaving');   // 1) provinsi + panel keluar dulu
+  clearTimeout(ut);ut=setTimeout(()=>{                                                                      // 2) setelah bersih, baru peta kembali
+    XT=0;LV=0;clearDiscs();app.classList.remove('focus','leaving');nodes.inert=rb.inert=false;
+    tagEl.innerHTML=N0.tag;h1.innerHTML=N0.h;pTxt.textContent=N0.p;swapIn();info();HAZ.forEach(x=>x.b.setAttribute('aria-pressed',x===HF));heat();natCard();showNodes();
+  },340);
+}
+function renderFocus(){
+  const v=Object.values(FD),mx=Math.max(1,...v),n=FD[hz[0]];
+  $('#ft').textContent=v.reduce((a,b)=>a+b,0).toLocaleString('id-ID');$('#fy').textContent='kejadian '+(YEAR==='all'?'sepanjang 2024–2025':'sepanjang '+YEAR);
+  $('#fl').replaceChildren(...[...HAZ].sort((a,b)=>FD[b[0]]-FD[a[0]]).map(h=>{
+    const b=document.createElement('button');b.className='hr';
+    b.style.cssText=`--c:${h[2]};--w:${FD[h[0]]/mx*100}%`;b.setAttribute('aria-pressed',h===hz);
+    b.innerHTML=`<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">${h[6]}</svg><span>${h[1]}</span><em>${FD[h[0]]}</em><u></u>`;
+    b.onclick=()=>pickH(h);return b}));
+  trendCard();
+}
+// ---------- Kartu tren (Provinsi_Tahun, 2010–2025) ----------
+let trK=null;
+const mono=P=>{const n=P.length,dx=[],m=[],t=[];for(let i=0;i<n-1;i++){dx[i]=P[i+1][0]-P[i][0];m[i]=(P[i+1][1]-P[i][1])/dx[i]}
+  t[0]=m[0];t[n-1]=m[n-2];for(let i=1;i<n-1;i++)t[i]=m[i-1]*m[i]<=0?0:(m[i-1]+m[i])/2;
+  for(let i=0;i<n-1;i++){if(m[i]===0){t[i]=t[i+1]=0;continue}const a=t[i]/m[i],b=t[i+1]/m[i],q=a*a+b*b;if(q>9){const k=3/Math.sqrt(q);t[i]=k*a*m[i];t[i+1]=k*b*m[i]}}
+  let d='M'+P[0][0].toFixed(1)+','+P[0][1].toFixed(1);
+  for(let i=0;i<n-1;i++){const h=dx[i]/3;d+=`C${(P[i][0]+h).toFixed(1)},${(P[i][1]+t[i]*h).toFixed(1)} ${(P[i+1][0]-h).toFixed(1)},${(P[i+1][1]-t[i+1]*h).toFixed(1)} ${P[i+1][0].toFixed(1)},${P[i+1][1].toFixed(1)}`}
+  return d};
+function trendCard(){
+  const box=$('#tr'),tr=TREN[foc.dataset.n.toUpperCase()]||[],mob=!matchMedia('(min-width:1200px)').matches;
+  if(mob&&box.parentNode!==$('#fp'))$('#fp').insertBefore(box,$('#fl'));else if(!mob&&box.parentNode!==$('.nar'))$('.nar').append(box);
+  if(!tr.length){box.replaceChildren();return}
+  const first=trK!==foc;trK=foc;
+  const fm=v=>v.toLocaleString('id-ID'),n=tr.length,W=246,H=50,T=15,B=4,tm=Math.max(1,...tr),pk=tr.indexOf(tm);
+  const X=i=>i/(n-1)*W,Y=v=>H-B-v/tm*(H-T-B),P=tr.map((v,i)=>[X(i),Y(v)]);
+  const i0=YEAR==='all'?n-2:YEAR-2010,i1=YEAR==='all'?n-1:YEAR-2010,df=i1;
+  const bw=W/(n-1),bx0=Math.max(0,X(i0)-bw/2),bx1=Math.min(W,X(i1)+bw/2),line=mono(P);
+  const rd=i=>{const v=tr[i],pv=i?tr[i-1]:0,d=pv?Math.round((v/pv-1)*100):null;
+    return `<b>${fm(v)}</b><span>kejadian · ${2010+i}</span>${d===null?'':`<em class="${d>=0?'up':'dn'}">${d>=0?'▲':'▼'} ${Math.abs(d)}%</em>`}`};
+  const vs=Object.values(TREN),y=2010+df,rk=vs.filter(a=>a[df]>tr[df]).length+1,sh=(tr[df]/RING[df]*100).toFixed(1).replace('.',',');
+  const px=Math.min(W-34,Math.max(34,X(pk)));
+  box.innerHTML=`<div class="trc${first&&!RM?' in':''}"><div class="trh" id="trh">${rd(df)}</div>
+  <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Tren total kejadian ${foc.dataset.n} 2010–2025">
+    <defs><linearGradient id="tgf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8452B" stop-opacity=".30"/><stop offset="1" stop-color="#C8452B" stop-opacity="0"/></linearGradient></defs>
+    <rect class="tb" x="${bx0.toFixed(1)}" y="0" width="${(bx1-bx0).toFixed(1)}" height="${H}" rx="5"/>
+    <line class="tg" x1="0" x2="${W}" y1="${Y(tm).toFixed(1)}" y2="${Y(tm).toFixed(1)}"/><line class="tg" x1="0" x2="${W}" y1="${Y(tm/2).toFixed(1)}" y2="${Y(tm/2).toFixed(1)}"/>
+    <path class="ta" d="${line}L${W},${H}L0,${H}Z" fill="url(#tgf)"/>
+    <path class="tl" pathLength="1" d="${line}"/>
+    <g class="td"><text class="tp2" x="${px.toFixed(1)}" y="${(Y(tm)-8).toFixed(1)}" text-anchor="middle">puncak ${fm(tm)} · ${2010+pk}</text>
+    <circle cx="${X(pk).toFixed(1)}" cy="${Y(tm).toFixed(1)}" r="2.6" fill="#fff" stroke="#C8452B" stroke-width="1.5"/>
+    ${[...new Set([i0,i1])].map(i=>`<circle cx="${X(i).toFixed(1)}" cy="${Y(tr[i]).toFixed(1)}" r="3.4" fill="#C8452B" stroke="#fff" stroke-width="1.6"/>`).join('')}</g>
+    <line class="tk" id="trk" y1="0" y2="${H}" visibility="hidden"/><circle id="trd" r="3.8" fill="#fff" stroke="#1E1B16" stroke-width="1.5" visibility="hidden"/>
+    <rect id="tro" x="0" y="0" width="${W}" height="${H}" fill="transparent"/>
+  </svg>
+  <div class="sa"><span>2010</span><span>2015</span><span>2020</span><span>2025</span></div>
+  <div class="tc">#${rk} dari ${vs.length} provinsi · ${sh}% total nasional ${y}</div></div>`;
+  const o=$('#tro'),k=$('#trk'),d=$('#trd'),h=$('#trh');
+  o.onpointermove=e=>{const r=o.getBoundingClientRect(),i=Math.max(0,Math.min(n-1,Math.round((e.clientX-r.left)/r.width*(n-1))));
+    k.setAttribute('x1',X(i));k.setAttribute('x2',X(i));d.setAttribute('cx',X(i));d.setAttribute('cy',Y(tr[i]));
+    k.setAttribute('visibility','visible');d.setAttribute('visibility','visible');h.innerHTML=rd(i)};
+  o.onpointerleave=()=>{k.setAttribute('visibility','hidden');d.setAttribute('visibility','hidden');h.innerHTML=rd(df)};
+}
+// ---------- Provinsi 3D + diorama bencana (Three.js + bencana.js) ----------
+const KEY={banjir:'banjir',pasang:'pasang',gempa:'gempa',longsor:'longsor',gunung:'erupsi',tsunami:'tsunami',karhutla:'karhutla',kering:'kekeringan',cuaca:'cuaca'};
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches,DC=$('#dc'),CO=$('#co'),MAPEL=$('.map'),SC={};
+let G3=window.__3D,GL=null,CAM=null,SCN=null,SLAB=null,LAY=[],gl=0,rz=0,XT=0,ut=0,NOUT=0,LV=0;
+MAPEL.addEventListener('animationend',()=>{MAPEL.style.animation='none'},{once:true});   // animasi masuk tidak mengunci opacity
+addEventListener('ben3d',()=>{G3=window.__3D;if(foc)showDiscs();else showNodes()});
+addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{if(foc)showDiscs(1);else if(!LV)showNodes()},250)});
+function disc3(k){
+  if(!SC[k]){
+    const t=new G3.THREE.Scene(),a=G3.BENCANA[k](t,{radius:60}),g=t.children[0],ls=[];
+    g.traverse(o=>{if(o.isAmbientLight||o.isDirectionalLight||o.isHemisphereLight)ls.push(o)});
+    ls.forEach(o=>o.parent.remove(o));            // lampu diganti satu set bersama
+    // palet diorama diseragamkan: saturasi diturunkan + sedikit nuansa hangat supaya menyatu dengan peta
+    const ms=new Set();
+    g.traverse(o=>{if(o.material)[].concat(o.material).forEach(m=>ms.add(m))});
+    ms.forEach(m=>{
+      m.onBeforeCompile=s=>{
+        s.fragmentShader=s.fragmentShader.replace('#include <colorspace_fragment>',
+          '#include <colorspace_fragment>\n{float l=dot(gl_FragColor.rgb,vec3(.299,.587,.114));gl_FragColor.rgb=mix(vec3(l),gl_FragColor.rgb,.6)*vec3(1.,.985,.955);}');
+      };
+      m.needsUpdate=true;
+    });
+    SC[k]={g,a};
+  }
+  return SC[k];
+}
+function markDisc(){
+  [...DC.children].forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===hz[0]));
+  const o=LAY.find(o=>o.h===hz);
+  if(!o){CO.classList.remove('on');return}
+  const tot=Object.values(FD).reduce((a,b)=>a+b,0);
+  CO.innerHTML=`<small>${hz[1]}</small><b>${FD[hz[0]]} kejadian</b><small>${Math.round(FD[hz[0]]/tot*100)}% dari total · BNPB ${YL()}</small>`;
+  CO.style.left=o.x+'px';CO.style.top=(o.y-1.35*o.r-10)+'px';CO.classList.add('on');
+}
+function clearDiscs(keepN){if(!keepN)clearNodes();
+  cancelAnimationFrame(gl);
+  if(SCN){LAY.forEach(o=>SCN.remove(o.z.g));if(SLAB){SCN.remove(SLAB);SLAB.geometry.dispose();SLAB.material.forEach(m=>m.dispose());SLAB=null}}
+  LAY=[];DC.replaceChildren();CO.classList.remove('on');$('#nt').textContent='';
+  if(GL&&!keepN)GL.clear();
+}
+function showDiscs(qk){
+  clearDiscs();if(!foc||!G3)return;
+  try{
+    const TH=G3.THREE,W=app.clientWidth,H=app.clientHeight;
+    ensureGL();
+    // 1) bentuk provinsi -> lempeng 3D (x = x peta, z = y peta, pusat di nol)
+    const rings=foc.getAttribute('d').split('Z').map(r=>(r.match(/-?[\d.]+/g)||[]).map(Number)).filter(n=>n.length>=6)
+      .map(n=>{const q=[];for(let i=0;i<n.length;i+=2)q.push([n[i],n[i+1]]);return q});
+    const area=q=>q.reduce((a,p,i)=>{const r=q[(i+1)%q.length];return a+p[0]*r[1]-r[0]*p[1]},0)/2;
+    const bb=foc.getBBox(),cx=bb.x+bb.width/2,cz=bb.y+bb.height/2,span=Math.max(bb.width,bb.height),dep=Math.min(9,Math.max(1.5,span*.05));
+    const big=rings.reduce((a,q)=>Math.abs(area(q))>Math.abs(area(a))?q:a),sg=Math.sign(area(big));
+    const V=q=>q.map(p=>new TH.Vector2(p[0]-cx,-(p[1]-cz)));
+    const inPoly=(pt,q)=>{let c=false;for(let i=0,j=q.length-1;i<q.length;j=i++)if((q[i][1]>pt[1])!==(q[j][1]>pt[1])&&pt[0]<(q[j][0]-q[i][0])*(pt[1]-q[i][1])/(q[j][1]-q[i][1])+q[i][0])c=!c;return c};
+    const outer=rings.filter(q=>Math.sign(area(q))===sg).map(q=>({q,s:new TH.Shape(V(q))}));
+    rings.filter(q=>Math.sign(area(q))!==sg).forEach(h=>{const o=outer.find(x=>inPoly(h[0],x.q));if(o)o.s.holes.push(new TH.Path(V(h)))});
+    const geo=new TH.ExtrudeGeometry(outer.map(x=>x.s),{depth:dep,bevelEnabled:false});geo.rotateX(-Math.PI/2);
+    SLAB=new TH.Mesh(geo,[new TH.MeshLambertMaterial({color:0xE6E0D2}),new TH.MeshLambertMaterial({color:0xC9C1AF})]);
+    SLAB.scale.y=.001;SCN.add(SLAB);
+    // 2) kamera isometrik: muat provinsi ke area panggung
+    CAM.position.set(1,1,1).multiplyScalar(span*3);CAM.lookAt(0,0,0);CAM.near=1;CAM.far=span*14;CAM.updateMatrixWorld();
+    const pv=new TH.Vector3();let u0=1e9,u1=-1e9,v0=1e9,v1=-1e9;
+    outer.forEach(o=>o.q.forEach(p=>[0,dep].forEach(y=>{pv.set(p[0]-cx,y,p[1]-cz).applyMatrix4(CAM.matrixWorldInverse);
+      u0=Math.min(u0,pv.x);u1=Math.max(u1,pv.x);v0=Math.min(v0,pv.y);v1=Math.max(v1,pv.y)})));
+    v1+=span*.14;
+    const mob=matchMedia('(max-width:820px)').matches,pl=W-316-Math.min(48,Math.max(20,W*.03))-24;
+    const[X0,X1,Y0,Y1]=mob?[12,W-12,118,H*.5-8]:[36,pl,170,H-36];
+    const sc=Math.min((X1-X0)/((u1-u0)*1.08),(Y1-Y0)/((v1-v0)*1.08)),uc=(u0+u1)/2,vc=(v0+v1)/2;
+    CAM.left=uc-(X0+X1)/2/sc;CAM.right=CAM.left+W/sc;CAM.top=vc+(Y0+Y1)/2/sc;CAM.bottom=CAM.top-H/sc;CAM.updateProjectionMatrix();
+    const pj=(x,y,z)=>{pv.set(x,y,z).applyMatrix4(CAM.matrixWorldInverse);return[(pv.x-CAM.left)*sc,(CAM.top-pv.y)*sc]};
+    // 3) ruang kosong di dalam provinsi (satuan peta) + jarak ke tepi
+    const ST=span/90,ox=bb.x-ST,oy=bb.y-ST,nx=Math.ceil(bb.width/ST)+3,ny=Math.ceil(bb.height/ST)+3,m=new Uint8Array(nx*ny),d=new Float32Array(nx*ny);
+    for(let j=0;j<ny;j++)for(let i=0;i<nx;i++)
+      if(foc.isPointInFill(new DOMPoint(ox+i*ST,oy+j*ST))){m[j*nx+i]=1;d[j*nx+i]=1e9}
+    for(let j=0;j<ny;j++)for(let i=0;i<nx;i++){const k=j*nx+i;if(!m[k])continue;let v=d[k];
+      if(i)v=Math.min(v,d[k-1]+1);
+      if(j){v=Math.min(v,d[k-nx]+1);if(i)v=Math.min(v,d[k-nx-1]+1.414);if(i<nx-1)v=Math.min(v,d[k-nx+1]+1.414)}d[k]=v}
+    for(let j=ny-1;j>=0;j--)for(let i=nx-1;i>=0;i--){const k=j*nx+i;if(!m[k])continue;let v=d[k];
+      if(i<nx-1)v=Math.min(v,d[k+1]+1);
+      if(j<ny-1){v=Math.min(v,d[k+nx]+1);if(i<nx-1)v=Math.min(v,d[k+nx+1]+1.414);if(i)v=Math.min(v,d[k+nx-1]+1.414)}d[k]=v}
+    // 4) terbesar di titik terlapang, lainnya lebih kecil & berjarak, hanya bila muat
+    const it=HAZ.filter(h=>FD[h[0]]>0).sort((a,c)=>FD[c[0]]-FD[a[0]]);if(!it.length)return;
+    const pxw=1/sc,XY=k=>[ox+(k%nx)*ST-cx,oy+((k/nx)|0)*ST-cz];
+    let k0=0;for(let k=1;k<d.length;k++)if(d[k]>d[k0])k0=k;
+    // semua bencana yang ada (>0) harus muat: #1 paling besar, sisanya dibagi; kalau sempit, semua dikecilkan bersama
+    const[x0,z0]=d[k0]>0?XY(k0):[0,0],cm=FD[it[0][0]],R1=Math.max(44*pxw,Math.min(120*pxw,Math.max(8*pxw,(d[k0]-.5)*ST)));
+    const cari=(L,r,q)=>{let pick=-1,bd=1e9;                      // titik kosong terdekat ke pusat yang cukup lapang
+      for(let k=0;k<d.length;k++){
+        if(!m[k]||(d[k]-.5)*ST<r*q)continue;const[x,z]=XY(k);
+        if(L.some(o=>Math.hypot(x-o.wx,z-o.wz)<r+o.wr+6*pxw))continue;
+        const dd=Math.hypot(x-x0,z-z0);if(dd<bd){bd=dd;pick=k}}
+      return pick};
+    const pack=(f,q)=>{const L=[{h:it[0],wx:x0,wz:z0,wr:Math.max(40*pxw,R1*f)}];
+      for(const h of it.slice(1)){const r=Math.max(24*pxw,R1*(.3+.18*Math.sqrt(FD[h[0]]/cm))*Math.min(1,1.1*f)),p=cari(L,r,q);
+        if(p<0)return null;const[x,z]=XY(p);L.push({h,wx:x,wz:z,wr:r})}
+      return L};
+    let L=null;for(const q of[.8,.5,.2,0]){for(let f=q>.7?1:.5;f>.3&&!L;f*=.93)L=pack(f,q);if(L)break}   // q = seberapa jauh boleh menjorok dari tepi
+    if(!L){L=[{h:it[0],wx:x0,wz:z0,wr:R1*.12}];                  // cadangan: tiap diorama boleh menyusut sendiri
+      it.slice(1).forEach(h=>{for(let r=R1*.3;r>=5*pxw;r*=.88){const p=cari(L,r);if(p>=0){const[x,z]=XY(p);L.push({h,wx:x,wz:z,wr:r});break}}})}
+    // 5) pasang diorama di atas lempeng + tombol keterangan
+    const t0=performance.now()-(qk?4000:0);
+    L.forEach((o,i)=>{
+      o.z=disc3(KEY[o.h[0]]);o.s=o.wr/60;o.ph=i*1.7;o.t0=t0+120+i*80;o.ly=dep+2.5*o.s;
+      o.z.g.position.set(o.wx,o.ly,o.wz);o.z.g.scale.setScalar(.001);SCN.add(o.z.g);
+      [o.x,o.y]=pj(o.wx,o.ly,o.wz);o.r=o.wr*sc;
+      const D=o.r*2,n=document.createElement('button');n.className='dc';n.dataset.k=o.h[0];
+      n.style.cssText=`left:${o.x-o.r}px;top:${o.y-1.4*o.r}px;width:${D}px;height:${D}px;--c:${o.h[2]}`;
+      n.setAttribute('aria-label',`${o.h[1]}: ${FD[o.h[0]]} kejadian`);n.innerHTML=`<span>${o.h[1]} · ${FD[o.h[0]]}</span>`;
+      n.onclick=()=>pickH(o.h);DC.append(n);
+    });
+    LAY=L;DC.style.transition='opacity .3s';DC.style.opacity=qk?1:0;if(qk)markDisc();else setTimeout(()=>{if(foc&&LAY===L){DC.style.opacity=1;markDisc()}},720);const miss=it.length-L.length;
+    $('#nt').textContent=miss?`${miss} jenis bencana terlalu kecil untuk muat di peta. Angkanya ada di daftar.`:'';
+    const frame=now=>{
+      const e=XT?Math.max(0,Math.min(1,(now-XT)/340)):0,ex=e*e*(3-2*e),eo=1-Math.pow(1-Math.min(1,(now-t0)/750),3);   // ex = keluar, eo = masuk
+      SLAB.scale.set(Math.max(.001,1-ex),Math.max(.001,(1-Math.pow(1-Math.min(1,(now-t0)/550),3))*(1-ex)),Math.max(.001,1-ex));
+      SCN.scale.setScalar(Math.max(.001,RM?1:(.9+.1*eo)*(1-.12*ex)));                  // zoom halus masuk/keluar
+      for(const o of LAY){
+        const a=o.z.a;
+        o.z.g.scale.setScalar(Math.max(.001,o.s*pop2((now-o.t0)/600)*(1-Math.min(1,ex*1.6))));
+        a.gerak(RM?a.durasi*.45:((now/1000+o.ph)%a.durasi));
+      }
+      GL.render(SCN,CAM);
+      if(!RM||now-t0<1300||XT)gl=requestAnimationFrame(frame);
+    };
+    gl=requestAnimationFrame(frame);
+  }catch(e){console.warn('Tampilan 3D gagal dimuat:',e)}
+}
+$('#bk').onclick=unfocus;
+// ---------- Peta awal: ikon bencana di sekeliling peta = diorama 3D ----------
+const DMC=new Map(),dm=e=>{let d=DMC.get(e.dataset.n);if(!d)DMC.set(e.dataset.n,d=dataProv(e));return d};
+const S2=Math.SQRT2,S6=Math.sqrt(6);
+let NL=[],ng=0,nlast=0,fc=0,HF=null,AVG=null;
+// bencana khas provinsi = yang paling menonjol dibanding rata-rata nasional
+function sig(e){
+  if(!AVG){AVG={};HAZ.forEach(h=>{AVG[h[0]]=provEls.reduce((a,p)=>a+dm(p)[h[0]],0)/provEls.length})}
+  const d=dm(e),sc=h=>d[h[0]]/(AVG[h[0]]+3);
+  return HAZ.reduce((a,h)=>sc(h)>sc(a)?h:a);
+}
+function top5(){
+  const ps=provEls.filter(e=>region==='all'||e.dataset.r===region),val=e=>HF?dm(e)[HF[0]]:ptot(e);
+  const L=ps.map(e=>[e,val(e)]).sort((a,b)=>b[1]-a[1]).slice(0,5),m=Math.max(1,L[0]?L[0][1]:1),tt=HF?SUMA(provEls.map(e=>dm(e)[HF[0]])):ntot();
+  $('#tp').innerHTML=`<div class="th"><b>Terbanyak · ${HF?HF[1]+' · 2024–2025':'semua bencana · 2010–2025'}</b><span>Nasional: ${tt.toLocaleString('id-ID')} kejadian</span></div><ol>${L.map(([e,v],i)=>`<li data-n="${e.dataset.n}"><small>#${i+1}</small><strong>${v.toLocaleString('id-ID')}</strong><small style="margin:-2px 0 4px">kejadian</small><span class="n">${e.dataset.n}</span><u style="--w:${v/m*100}%"></u></li>`).join('')}</ol>`;
+  fitTp();
+}
+function fitTp(){fitTp0()}
+function fitTp0(){
+  const tp=$('#tp'),ap=$('.app');if(!tp||!ap)return;
+  ap.classList.remove('tpTop');tp.style.visibility='';
+  if(!tp.offsetParent)return;
+  const tops=HAZ.filter(h=>h[3]>50&&h.b).map(h=>h.b.getBoundingClientRect().top);if(!tops.length)return;
+  const lim=Math.min(...tops)-10,bad=()=>tp.getBoundingClientRect().bottom>lim;
+  if(bad())ap.classList.add('tpTop');   // layar pendek: tombol statistik pindah ke bawah, daftar naik
+  if(bad())tp.style.visibility='hidden';
+}
+addEventListener('resize',fitTp);addEventListener('resize',()=>{if(foc)trendCard()});
+$('#tp').onclick=e=>{const li=e.target.closest('li');if(!li)return;const el=provEls.find(p=>p.dataset.n===li.dataset.n);if(el)focusProv(el)};
+function heat(){
+  // heatmap muncul saat bencana dipilih (data provinsi × jenis 2024–2025) atau saat wilayah dipilih (total Provinsi_Tahun 2010–2025, skala dalam wilayah itu)
+  top5();const R=region!=='all',on=!!HF||R||allHeat;
+  const v=provEls.map(e=>HF?dm(e)[HF[0]]:(!R||e.dataset.r===region)?ptot(e):0),mx=Math.max(1,...v);
+  provEls.forEach((e,i)=>e.style.setProperty('--h',on?Math.round(Math.pow(v[i]/mx,.8)*100):0));
+  $('#hz').textContent=HF?HF[1]:'Semua bencana';$('.lh').classList.toggle('off',on);
+}
+// info nasional untuk jenis bencana terpilih (data Nasional_Jenis_Tahun): kartu di bawah Top 5 (layar lebar) atau teks di paragraf (layar sempit)
+function natCard(){
+  if(foc)return;const el=$('#ns');
+  if(!HF){el.replaceChildren();pTxt.style.display='';pTxt.textContent=N0.p;return}
+  const a=NAS[HAZ.indexOf(HF)],v=a[15],pv=a[14],d=pv>0?Math.round((v/pv-1)*100):null,pk=a.indexOf(Math.max(...a)),sh=Math.round(v/RING[15]*100);
+  if(matchMedia('(min-width:1001px)').matches){
+    pTxt.style.display='';
+    const SH={banjir:'Air meluap dan menggenangi daratan.',pasang:'Air laut naik ke pesisir saat pasang tinggi.',gempa:'Getaran akibat pergeseran lempeng bumi.',longsor:'Tanah dan batuan bergerak turun di lereng.',gunung:'Letusan dari gunung api yang aktif.',tsunami:'Gelombang laut besar, biasanya akibat gempa.',karhutla:'Hutan dan lahan terbakar, kerap saat kemarau.',kering:'Kekurangan air dalam waktu lama.',cuaca:'Angin kencang dan hujan lebat mendadak.'};
+    el.innerHTML=`<div class="ns"><div class="r"><b>${v.toLocaleString('id-ID')}</b>${d===null?'':`<em>${d>=0?'▲':'▼'} ${Math.abs(d)}%</em>`}</div><span>kejadian di 2025 (vs 2024)</span></div><p class="nd">${SH[HF[0]]}</p>`;
+  }else{
+    el.replaceChildren();pTxt.style.display='';const b='font-weight:600;color:';
+    pTxt.innerHTML=`${HF[5]}<br><span style="${b}var(--ink)">${v.toLocaleString('id-ID')} kejadian</span> di 2025${d===null?'':` · <span style="${b}var(--hz)">${d>=0?'▲':'▼'} ${Math.abs(d)}%</span> dari 2024`} · ${sh}% dari semua kejadian.`;
+  }
+}
+// bencana lain meredup saat satu dipilih
+function markHome(){HAZ.forEach(h=>h.b.classList.toggle('off',!!HF&&h!==HF))}
+function ensureGL(){
+  const TH=G3.THREE;
+  if(!GL){
+    GL=new TH.WebGLRenderer({alpha:true,antialias:true});GL.setClearColor(0,0);GL.domElement.className='gl';app.insertBefore(GL.domElement,DC);
+    SCN=new TH.Scene();SCN.add(new TH.HemisphereLight(0xFFFFFF,0xE6DDF0,2.1));
+    const dl=new TH.DirectionalLight(0xFFF4E6,1.4);dl.position.set(30,100,70);SCN.add(dl);const fl=new TH.DirectionalLight(0xD6E0F5,.3);fl.position.set(-70,45,-35);SCN.add(fl);
+    CAM=new TH.OrthographicCamera(-1,1,1,-1,1,10);
+  }
+  GL.setPixelRatio(Math.min(devicePixelRatio,2));GL.setSize(app.clientWidth,app.clientHeight,false);
+}
+function clearNodes(){
+  cancelAnimationFrame(ng);ng=0;
+  if(SCN)NL.forEach(o=>SCN.remove(o.z.g));
+  NL=[];if(GL)GL.clear();
+}
+function showNodes(){
+  clearNodes();if(foc||!G3||!READY)return;
+  try{
+    ensureGL();NOUT=0;SCN.scale.setScalar(1);
+    const W=app.clientWidth,H=app.clientHeight,ar=app.getBoundingClientRect();
+    // kamera isometrik, 1 satuan dunia = 1 piksel layar
+    CAM.position.set(1,1,1).multiplyScalar(800);CAM.lookAt(0,0,0);
+    CAM.left=-W/2;CAM.right=W/2;CAM.top=H/2;CAM.bottom=-H/2;CAM.near=1;CAM.far=3600;CAM.updateProjectionMatrix();
+    const place=(px,py)=>{const A=(px-W/2)*S2,B=(H/2-py)*S6;return[(A-B)/2,(-B-A)/2]};
+    const t0=performance.now();
+    NL=HAZ.map((h,i)=>{
+      const br=h.b.getBoundingClientRect(),r=br.width*.46;
+      const o={h,px:br.left-ar.left+br.width/2,py:br.top-ar.top+br.height*.76,s:r/60,ph:i*1.7,t0:t0+150+i*90,f:1,hl:0,sc:-1,lf:0,hov:false};
+      o.z=disc3(KEY[h[0]]);o.z.g.scale.setScalar(.001);SCN.add(o.z.g);
+      h.b.onmouseenter=h.b.onfocus=()=>{o.hov=true};h.b.onmouseleave=h.b.onblur=()=>{o.hov=false};
+      return o;
+    });
+    app.classList.add('d3');markHome();
+    const bk=u=>{u=Math.min(1,Math.max(0,u));return 1+2.2*Math.pow(u-1,3)+1.2*Math.pow(u-1,2)};
+    const frame=now=>{
+      ng=requestAnimationFrame(frame);
+      if(now-nlast<33)return;nlast=now;
+      const nx=NOUT?Math.max(0,Math.min(1,(now-NOUT)/280)):0,nk=1-nx*nx*(3-2*nx);
+      NL.forEach(o=>{
+        const tf=(HF&&o.h!==HF?.8:1)*(o.hov?1.14:o.h===HF?1.08:1),pop=bk((now-o.t0)/650);
+        o.f+=(tf-o.f)*.25;o.hl+=((o.hov?1:0)-o.hl)*.25;
+        const sc=Math.max(.001,o.s*pop*o.f*nk),lift=o.hl*6,ch=Math.abs(sc-o.sc)>1e-4||Math.abs(lift-o.lf)>1e-3;
+        if(ch){o.sc=sc;o.lf=lift;const[x,z]=place(o.px,o.py-lift);o.z.g.position.set(x,0,z);o.z.g.scale.setScalar(sc)}
+        const a=o.z.a;a.gerak(RM?a.durasi*.45:((now/1000+o.ph)%a.durasi));
+      });
+      GL.render(SCN,CAM);
+    };
+    ng=requestAnimationFrame(frame);
+  }catch(e){app.classList.remove('d3');console.warn('Diorama ikon gagal dimuat:',e)}
+}
+if(window.ResizeObserver)new ResizeObserver(()=>{clearTimeout(rz);rz=setTimeout(()=>{if(foc)showDiscs();else showNodes()},150)}).observe(app);
+(function(){
+const fm=v=>v.toLocaleString('id-ID'),mx=Math.max(...RING),pk=RING.indexOf(mx),sum=RING.reduce((a,b)=>a+b,0),dl=Math.round((RING[15]/RING[14]-1)*100);
+const hz=HAZ.map((h,k)=>({h,v:NAS[k],t:NAS[k].reduce((a,b)=>a+b,0)})),t25=[...hz].sort((a,b)=>b.v[15]-a.v[15])[0];
+const cards=[[fm(RING[15]),'kejadian tercatat 2025',(dl>=0?'+':'')+dl+'% dari 2024'],[fm(mx),'rekor tertinggi','tahun '+(2010+pk)],[fm(sum),'total 2010–2025','16 tahun pencatatan'],[t25.h[1],'terbanyak di 2025',Math.round(t25.v[15]/RING[15]*100)+'% dari semua kejadian']];
+const bars=RING.map((t,i)=>`<i class="${i===pk?'pk':i>=14?'on':''}" style="height:${t/mx*100}%" title="${2010+i}: ${fm(t)}"></i>`).join('');
+const hm=[...hz].sort((a,b)=>b.t-a.t).map(o=>{const m=Math.max(...o.v);return `<span>${o.h[1]}</span>`+o.v.map((v,i)=>`<i title="${o.h[1]} ${2010+i}: ${fm(v)}" style="background:color-mix(in srgb,${o.h[2]} ${Math.round(8+v/m*92)}%,#EFEAE0)"></i>`).join('')}).join('');
+const nm=Object.fromEntries(PROV.map(p=>[p[0].toUpperCase(),p[0]])),pt=Object.entries(TREN).map(([k,a])=>[nm[k]||k,a.reduce((x,y)=>x+y,0)]).sort((a,b)=>b[1]-a[1]).slice(0,8);
+$('#trenS').innerHTML=`<div class="st">${cards.map(c=>`<div><b>${c[0]}</b><span>${c[1]}</span><small>${c[2]}</small></div>`).join('')}</div>
+<div class="cc"><h4>Total kejadian per tahun</h4><p>Naik tajam sejak 2016. Batang merah = 2024–2025, hitam = rekor.</p><div class="sp tb">${bars}</div><div class="sa"><span>2010</span><span>2025</span></div></div>
+<div class="cc"><h4>Jenis bencana, 2010–2025</h4><p>Makin pekat = makin banyak kejadian (dibandingkan puncak jenis itu sendiri). Urut dari yang paling sering.</p><div class="hm">${hm}</div><div class="sa"><span style="margin-left:100px">2010</span><span>2025</span></div></div>
+<div class="cc"><h4>Provinsi dengan kejadian terbanyak</h4><p>Total 2010–2025.</p>${pt.map(p=>`<div class="pr"><span>${p[0]}</span><u style="--w:${p[1]/pt[0][1]*100}%"></u><em>${fm(p[1])}</em></div>`).join('')}</div>
+<p class="dn" style="display:block;margin-top:20px">Sumber data kejadian: BNPB (sheet Ringkasan, Nasional_Jenis_Tahun, Provinsi_Tahun, dan Provinsi_Jenis 2024–2025). Batas wilayah provinsi: <a href="https://github.com/denyherianto/indonesia-geojson-topojson-maps-with-38-provinces" target="_blank" rel="noopener">Indonesia GeoJSON &amp; TopoJSON Maps (38 Provinces)</a> oleh Deny Herianto, berlisensi CC BY 4.0. Geometri disederhanakan dan diproyeksikan ulang untuk tampilan web.</p>`;
+})();
+const yb=$('#yr');[['all','Semua'],[2024,'2024'],[2025,'2025']].forEach(([y,t])=>{const b=document.createElement('button');b.textContent=t;b.setAttribute('aria-pressed',y===YEAR);
+  b.onclick=()=>{YEAR=y;if(foc){FD=dm(foc);renderFocus();showDiscs(1)}DMC.clear();AVG=null;[...yb.children].forEach(x=>x.setAttribute('aria-pressed',x===b));heat();info()};yb.append(b)});
+READY=true;HAZ.forEach(x=>x.b.setAttribute('aria-pressed',false));heat();info();markHome();showNodes();
+</script>
+<script type="module">
+// =====================================================================
+// BENCANA.JS — 9 diorama bencana, Three.js isometrik
+// Diorama detail (rumah, gedung, pohon, kendaraan) dengan gerak pelan
+// yang berulang mulus. Tidak ada fase "bangun lalu hancur lalu reset".
+// Tiap fungsi mengembalikan update(p), p = 0..1 (satu siklus penuh).
+// Ubah kecepatan di tabel DEF paling bawah (angka = detik per siklus).
+// =====================================================================
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.183.0/build/three.module.min.js';
+
+const C = { alas: 0xFCFAF4, putih: 0xFBF8F1, tinta: 0x565A78, oren: 0xEF6A4C, api: 0xF9B556,
+  air: 0x9BCBE8, sage: 0xB9DDB2, tanah: 0xF6E7C1, kayu: 0x9A7B66, awan: 0xFAF8F5, tanahLiat: 0xE9B99A };
+const TAU = Math.PI * 2, { sin: sn, cos: cs, PI } = Math, R = 60;
+const cl = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const fr = x => x - Math.floor(x);
+const sm = x => (x = cl(x), x * x * (3 - 2 * x));
+const rng = s => () => { s = s + 0x6D2B79F5 | 0; let t = Math.imul(s ^ s >>> 15, 1 | s);
+  t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+const mat = (c, o) => new THREE.MeshLambertMaterial({ color: c, ...o });
+const D = new THREE.Object3D();
+
+// piringan dasar + lampu (lampu dilepas host, diganti set bersama)
+let TINT = 0xE4DED4;
+const TN = { banjir: 0xBFDCEE, tsunami: 0xB5D6EC, longsor: 0xCFE3C4, gempa: 0xF4CDBE, erupsi: 0xF2C4B4, pasang: 0xC9E2EE, cuaca: 0xD3CFEA, kekeringan: 0xF5DFA8, karhutla: 0xF6C9B0 };
+function stage(scene, top = C.alas) {
+  const g = new THREE.Group(); scene.add(g);
+  g.add(new THREE.AmbientLight(0xffffff, 2.1));
+  const l = new THREE.DirectionalLight(0xffffff, 1.4); l.position.set(30, 100, 70); g.add(l);
+  const add = (geo, c, x = 0, y = 0, z = 0, o, p = g) => {
+    const m = new THREE.Mesh(geo, mat(c, o)); m.position.set(x, y, z); p.add(m); return m; };
+  add(new THREE.CylinderGeometry(R, R, 1.8, 96), top, 0, -.9, 0); add(new THREE.CylinderGeometry(R - 1.6, R - 1.6, 4.2, 96), TINT, 0, -3.9, 0);
+  const st = sombra();
+  if (st) { const sh = new THREE.Mesh(new THREE.CircleGeometry(R * 1.22, 48).rotateX(-PI / 2), new THREE.MeshBasicMaterial({ map: st, transparent: true, depthWrite: false })); sh.position.set(-3, -2.3, -3); g.add(sh); }
+  return { g, add };
+}
+let _sh = null;                                     // bayangan lembut: lingkaran gradien di bawah piringan
+const sombra = () => {
+  if (typeof document === 'undefined') return null;
+  if (!_sh) { const cv = document.createElement('canvas'); cv.width = cv.height = 128; const x = cv.getContext('2d'), gr = x.createRadialGradient(64, 64, 0, 64, 64, 64);
+    gr.addColorStop(0, 'rgba(96,84,118,.30)'); gr.addColorStop(.82, 'rgba(96,84,118,.22)'); gr.addColorStop(1, 'rgba(96,84,118,0)');
+    x.fillStyle = gr; x.fillRect(0, 0, 128, 128); _sh = new THREE.CanvasTexture(cv); _sh.colorSpace = THREE.SRGBColorSpace; }
+  return _sh;
+};
+const pool = (g, geo, c, n, o) => { const m = new THREE.InstancedMesh(geo, mat(c, o), n);
+  m.instanceMatrix.setUsage(THREE.DynamicDrawUsage); m.frustumCulled = false; g.add(m); return m; };
+const put = (m, i, x, y, z, sx, sy = sx, sz = sx, ry = 0, rz = 0) => {
+  D.position.set(x, y, z); D.rotation.set(0, ry, rz);
+  D.scale.set(Math.max(sx, 1e-4), Math.max(sy, 1e-4), Math.max(sz, 1e-4)); D.updateMatrix(); m.setMatrixAt(i, D.matrix); };
+const ball = new THREE.SphereGeometry(1, 16, 12);
+// kepulan: naik, membesar lalu menyusut habis (siklus bulat per loop => mulus)
+const puff = (m, i, p, x, y, z, cyc, off, rise, size, dx = 8) => {
+  const L = fr(p * cyc + off), s = size * (.45 + .9 * L) * sm(L / .15) * (1 - sm((L - .55) / .45));
+  put(m, i, x + dx * L, y + rise * L, z - dx * .3 * L, s); };
+// air = tabung rendah, tinggi diatur lewat scale.y
+const kolam = (add, r, c) => add(new THREE.CylinderGeometry(r, r, 1, 80).translate(0, .5, 0), c, 0, 0, 0, { transparent: true, opacity: .9 });
+const cincin = (g, n, c) => Array.from({ length: n }, () => { const m = new THREE.Mesh(new THREE.RingGeometry(.93, 1, 80).rotateX(-PI / 2),
+  mat(c, { transparent: true, depthWrite: false, side: THREE.DoubleSide })); g.add(m); return m; });
+const riak = (m, r, y, o) => { m.scale.set(r, 1, r); m.position.y = y; m.material.opacity = o; };
+
+function lembaran(Rm, nr, ns) {                     // permukaan air polar + dinding tepi
+  const P = [0, 0, 0], I = [];
+  for (let i = 1; i <= nr; i++) for (let j = 0; j < ns; j++) P.push(Rm * i / nr * cs(TAU * j / ns), 0, Rm * i / nr * sn(TAU * j / ns));
+  for (let j = 0; j < ns; j++) I.push(0, 1 + (j + 1) % ns, 1 + j);
+  for (let i = 1; i < nr; i++) for (let j = 0; j < ns; j++) {
+    const a = 1 + (i - 1) * ns + j, b = 1 + (i - 1) * ns + (j + 1) % ns, c = a + ns, d = b + ns; I.push(a, b, c, b, d, c); }
+  const e = P.length / 3;
+  for (let j = 0; j < ns; j++) { const x = Rm * cs(TAU * j / ns), z = Rm * sn(TAU * j / ns); P.push(x, 0, z, x, 0, z); }
+  for (let j = 0; j < ns; j++) { const a = e + 2 * j, b = e + 2 * ((j + 1) % ns); I.push(a, b, a + 1, b, b + 1, a + 1); }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(P, 3)); geo.setIndex(I);
+  return { geo, e, edge: 1 + (nr - 1) * ns };
+}
+
+// ---- perangkat bangun: bentuk dasar + prop kecil yang dipakai ulang ----
+const bx = (p, w, h, d, c, x = 0, y = 0, z = 0, o) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat(c, o)); m.position.set(x, y, z); p.add(m); return m; };
+const cy = (p, r1, r2, h, c, x = 0, y = 0, z = 0, sg = 10, o) => { const m = new THREE.Mesh(new THREE.CylinderGeometry(r1, r2, h, sg), mat(c, o)); m.position.set(x, y, z); p.add(m); return m; };
+const co = (p, r, h, c, x = 0, y = 0, z = 0, sg = 8, o) => { const m = new THREE.Mesh(new THREE.ConeGeometry(r, h, sg), mat(c, o)); m.position.set(x, y, z); p.add(m); return m; };
+const grp = (p, x = 0, y = 0, z = 0, ry = 0) => { const q = new THREE.Group(); q.position.set(x, y, z); q.rotation.y = ry; p.add(q); return q; };
+const tex = {};
+const jendela = (c, r) => {                       // tekstur jendela kecil untuk dinding gedung
+  if (typeof document === 'undefined') return null;
+  const k = c + 'x' + r; if (tex[k]) return tex[k];
+  const cv = document.createElement('canvas'); cv.width = c * 16; cv.height = r * 16; const x = cv.getContext('2d');
+  x.fillStyle = '#FBF9F4'; x.fillRect(0, 0, cv.width, cv.height); x.fillStyle = '#C3D8E8';
+  for (let i = 0; i < c; i++) for (let j = 0; j < r; j++) x.fillRect(i * 16 + 4, j * 16 + 4, 8, 9);
+  const t = new THREE.CanvasTexture(cv); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; return tex[k] = t;
+};
+function gedung(g, x, z, w, h, d, tint = C.putih) {
+  const q = grp(g, x, 0, z), nc = Math.max(2, Math.round(w / 3.2)), nr = Math.max(2, Math.round(h / 3.6));
+  const s = mat(tint, { map: jendela(nc, nr) }), t = mat(tint), b = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), [s, s, t, t, s, s]);
+  b.position.y = h / 2; q.add(b); bx(q, w * .4, 2, d * .4, 0xDDD8CE, 0, h + 1, 0); return q;
+}
+function rumah(p, x, z, w, h, roof = C.oren, ry = 0) {
+  const q = grp(p, x, 0, z, ry); bx(q, w, h, w * .9, C.putih, 0, h / 2, 0);
+  const r = co(q, w * .8, h * .7, roof, 0, h + h * .35, 0, 4); r.rotation.y = PI / 4; r.scale.z = .9;
+  bx(q, w * .2, h * .5, .5, 0xA67C62, 0, h * .25, w * .45);
+  bx(q, w * .2, h * .22, .5, 0xBCD4E8, -w * .27, h * .62, w * .45); bx(q, w * .2, h * .22, .5, 0xBCD4E8, w * .27, h * .62, w * .45);
+  bx(q, w * .14, h * .5, w * .14, 0xD8D2C6, w * .25, h + h * .45, -w * .1); return q;
+}
+function palem(p, x, z, s = 1) {
+  const q = grp(p, x, 0, z, x); cy(q, .5 * s, .9 * s, 11 * s, C.kayu, 0, 5.5 * s, 0, 6);
+  for (let i = 0; i < 6; i++) { const a = TAU * i / 6, l = co(q, 1.3 * s, 7 * s, 0x7FB88C, cs(a) * 3 * s, 11 * s, sn(a) * 3 * s, 4); l.rotation.set(sn(a) * 1.2, 0, -cs(a) * 1.2); }
+  return q;
+}
+function awan(p, x, y, z, k = 1, c = C.awan) {
+  const q = grp(p, x, y, z);
+  [[-8, 0, 0, 7], [0, 2, 1, 9], [8, -.5, 0, 6.5], [-1, -2.5, -4, 6]].forEach(([a, b, d, r]) => { const m = new THREE.Mesh(ball, mat(c)); m.position.set(a * k, b * k, d * k); m.scale.set(r * k * 1.15, r * k * .75, r * k); q.add(m); });
+  return q;
+}
+function pohon(p, x, z, s = 1, c = 0xA6D1A0) {          // pohon tunggal (bisa digoyang lewat pivot)
+  const q = grp(p, x, 0, z); cy(q, .6 * s, .9 * s, 5 * s, C.kayu, 0, 2.5 * s, 0, 6);
+  co(q, 5 * s, 9 * s, c, 0, 8 * s, 0, 8, { flatShading: true }); co(q, 3.6 * s, 7 * s, c, 0, 12.5 * s, 0, 8, { flatShading: true }); return q;
+}
+function hutan(g, L, warna = [0xA6D1A0, 0x8DC49A, 0x9ACC92]) {    // banyak pohon sekaligus (instancing)
+  const n = L.length, fl = { flatShading: true }, tr = pool(g, new THREE.CylinderGeometry(.6, .9, 5, 6), C.kayu, n),
+    k1 = pool(g, new THREE.ConeGeometry(5, 9, 8), 0xffffff, n, fl), k2 = pool(g, new THREE.ConeGeometry(3.6, 7, 8), 0xffffff, n, fl), c = new THREE.Color();
+  L.forEach(([x, z, s], i) => { put(tr, i, x, 2.5 * s, z, s); put(k1, i, x, 8 * s, z, s); put(k2, i, x, 12.5 * s, z, s); c.setHex(warna[i % warna.length]); k1.setColorAt(i, c); k2.setColorAt(i, c); });
+  [tr, k1, k2].forEach(m => m.instanceMatrix.needsUpdate = true); k1.instanceColor.needsUpdate = k2.instanceColor.needsUpdate = true;
+}
+const sebar = (n, sd, rM = 50, av = []) => {                       // titik acak yang tidak menabrak area lain
+  const r = rng(sd), o = []; let t = 0;
+  while (o.length < n && t++ < 900) { const a = r() * TAU, d = Math.sqrt(r()) * rM, x = cs(a) * d, z = sn(a) * d;
+    if (av.some(([ax, az, ar]) => Math.hypot(x - ax, z - az) < ar) || o.some(q => Math.hypot(x - q[0], z - q[1]) < 7)) continue; o.push([x, z, .75 + r() * .6]); }
+  return o;
+};
+const perahu = (p, x, z, c = C.oren) => { const q = grp(p, x, 0, z); bx(q, 10, 2, 4.4, C.putih); bx(q, 10.4, .8, 4.8, c, 0, 1.2, 0); bx(q, 3, 2.6, 3, 0xE8E4DA, -1.5, 2.6, 0); cy(q, .2, .2, 6, C.kayu, 2.5, 4, 0, 6); return q; };
+
+// 1. BANJIR — kampung kecil, air naik-turun, perahu dan peti mengapung, hujan dari dua awan
+function banjir(sc) {
+  const { g, add } = stage(sc);
+  bx(g, 80, .3, 8, 0xE8E4DA, 0, .15, 10);
+  [[-26, -10, 15, 11, C.oren, .2], [-6, -26, 13, 9, 0x8DB4D8, -.1], [22, -20, 14, 10, 0xE8906A, .3], [32, -2, 12, 9, C.oren, -.2], [-30, 14, 12, 9, 0x8DB4D8, .4]].forEach(a => rumah(g, ...a));
+  hutan(g, [[-14, -8, .9], [12, -10, .8], [8, -34, 1], [-34, -26, .9], [36, -26, .8], [-18, 30, 1], [16, 24, .9]]);
+  const tp = grp(g, 12, 0, 6); cy(tp, .5, .7, 20, C.kayu, 0, 10, 0, 6); bx(tp, 9, .8, .8, C.kayu, 0, 18, 0);
+  const air = kolam(add, 52, C.air), rr = cincin(g, 3, 0xFFFFFF), pr = perahu(g, -4, 18), pt = [[-18, 24], [24, 18], [2, 34]].map(([x, z]) => bx(g, 3, 3, 3, C.kayu, x, 0, z));
+  const aw = [awan(g, -10, 42, 0, 1), awan(g, 14, 46, -8, .8)], N = 26, hj = pool(g, new THREE.BoxGeometry(.6, 5, .6), 0x7FB2D9, N), r = rng(3);
+  const dr = Array.from({ length: N }, () => [(r() - .5) * 44, (r() - .5) * 26, r()]);
+  return p => {
+    const lv = 1.5 + 4.5 * (.5 + .5 * sn(TAU * p)); air.scale.y = lv;
+    rr.forEach((m, i) => { const u = fr(p * 2 + i / 3); riak(m, 10 + 40 * u, lv + .2, .55 * (1 - u)); });
+    pr.position.y = lv + .6 + .5 * sn(TAU * 2 * p); pr.rotation.z = .05 * sn(TAU * 2 * p + 1);
+    pt.forEach((q, i) => { q.position.y = lv + 1.2 + .4 * sn(TAU * 2 * p + i * 2); q.rotation.y = TAU * p * (i + 1); });
+    aw.forEach((c, i) => c.position.x = [-10, 14][i] + 3 * sn(TAU * p + i * 3));
+    dr.forEach(([x, z, o], i) => { const y = 40 - fr(p * 2 + o) * (40 - lv); put(hj, i, x, y, z, y > lv + 2 ? 1 : 0, 1, 1); });
+  };
+}
+
+// 2. TSUNAMI — gelombang bertepi busa menyapu pulau kecil berisi mercusuar, rumah, palem; perahu terbawa
+const ombak = (x, z, p) => { const d = fr((120 * (p - .5) - x) / 120);
+  return 1.8 + 15 * sm(d / .06) * Math.pow(Math.max(0, 1 - d / .42), 2) * (.85 + .15 * cs(z * .12)) + .4 * sn(x * .16 - TAU * 2 * p); };
+function tsunami(sc) {
+  const { g } = stage(sc), NR = 16, NS = 72, w = lembaran(52, NR, NS);
+  cy(g, 24, 26, 4, C.tanah, 32, 2, 0, 48); const pl = grp(g, 0, 4, 0);
+  rumah(pl, 28, -10, 10, 8, C.oren, .3); rumah(pl, 38, 8, 9, 7, 0x8DB4D8, -.4); rumah(pl, 24, 10, 8, 6, C.oren, .1);
+  const mc = grp(pl, 42, 0, -12); cy(mc, 2.4, 3.4, 22, C.putih, 0, 11, 0, 12); [6, 14].forEach(y => cy(mc, 2.6, 3.2, 3.4, C.oren, 0, y, 0, 12));
+  bx(mc, 4, 3, 4, 0xE8E4DA, 0, 23.5, 0); co(mc, 3.6, 3.5, C.oren, 0, 26.7, 0);
+  [[20, -2], [34, -22], [40, 14], [32, 22]].forEach(([x, z]) => palem(pl, x, z, .9));
+  const bt = perahu(g, 0, -30, C.oren);
+  const pos = w.geo.attributes.position, n = w.e, col = new Float32Array(pos.count * 3), ca = new THREE.Color(C.air), cf = new THREE.Color(0xF2F7FA), tc = new THREE.Color();
+  for (let k = 0; k < pos.count; k++) ca.toArray(col, k * 3);
+  w.geo.setAttribute('color', new THREE.BufferAttribute(col, 3)); g.add(new THREE.Mesh(w.geo, mat(0xffffff, { vertexColors: true })));
+  return p => {
+    for (let k = 0; k < n; k++) { const y = ombak(pos.getX(k), pos.getZ(k), p); pos.setY(k, y); tc.copy(ca).lerp(cf, sm((y - 6) / 7)).toArray(col, k * 3); }
+    for (let j = 0; j < NS; j++) pos.setY(n + 2 * j, pos.getY(w.edge + j));
+    pos.needsUpdate = true; w.geo.attributes.color.needsUpdate = true; w.geo.computeVertexNormals();
+    const bxp = 120 * (p - .5) - 6; bt.visible = Math.abs(bxp) < 44; bt.position.set(bxp, ombak(bxp, -30, p) + .8, -30); bt.rotation.z = .18;
+  };
+}
+
+// 3. LONGSOR — bukit dengan bekas longsor, batu menggelinding, jalan + truk + rumah di kaki bukit
+function longsor(sc) {
+  const { g, add } = stage(sc), cx = -10, cz = -10, H = 28, Rr = 30 * .92, dir = [cs(PI / 4), sn(PI / 4)];
+  add(new THREE.ConeGeometry(30, H, 8), C.sage, cx, H / 2, cz, { flatShading: true }).rotation.y = PI / 8;
+  const sk = grp(g, cx + dir[0] * 14, H * (1 - 14 / Rr) + .7, cz + dir[1] * 14, PI / 4); sk.rotation.order = 'YXZ'; sk.rotation.x = .79;
+  bx(sk, 9, .5, 34, 0xE9B99A); bx(sk, 5, .55, 24, 0xDB9F82, 0, .05, 2);
+  hutan(g, sebar(16, 7, 50, [[cx, cz, 36], [20, 20, 14], [0, 30, 12], [36, 8, 10]]));
+  bx(g, 60, .3, 7, 0xE8E4DA, 0, .15, 30); rumah(g, 36, 8, 12, 9, C.oren, -.3);
+  const tk = grp(g, -6, 0, 30); bx(tk, 8, 3.6, 4.4, C.putih, 1, 3, 0); bx(tk, 3.6, 3.6, 4.4, C.oren, -4.6, 2.4, 0); bx(tk, 2, 1.4, 4.5, 0xBCD4E8, -5.2, 3.4, 0);
+  [-4, 4].forEach(x => [-2.3, 2.3].forEach(z => { const w = cy(tk, 1.2, 1.2, 1, C.tinta, x, 1.2, z, 12); w.rotation.x = PI / 2; }));
+  const rk = [], sz = [1, .8, 1.15, .9, 1.05, .75, 1];
+  for (let i = 0; i < 7; i++) rk.push(add(new THREE.DodecahedronGeometry(3.2, 0), C.tanahLiat, 0, 0, 0, { flatShading: true }));
+  [[40, .8, 3.4], [43, -.9, 2.6], [46, .5, 3], [42, 1.6, 2.2]].forEach(([r, o, s]) => add(new THREE.DodecahedronGeometry(s, 0), C.tanahLiat, cx + dir[0] * r - dir[1] * o * 6, s * .5, cz + dir[1] * r + dir[0] * o * 6, { flatShading: true }));
+  const db = pool(g, ball, 0xEBD9C0, 4, { transparent: true, opacity: .85 });
+  return p => {
+    rk.forEach((m, i) => {
+      const u = fr(p + i / 7), r = 4 + 38 * (u * u * .5 + u * .5), off = ((i * 7) % 5 - 2) * 2.4;
+      m.position.set(cx + dir[0] * r - dir[1] * off, Math.max(0, H * (1 - r / Rr)) + 2.4, cz + dir[1] * r + dir[0] * off);
+      m.scale.setScalar(sz[i] * sm(u / .08) * (1 - sm((u - .92) / .08)) + 1e-4); m.rotation.set(u * 11, u * 7, 0);
+    });
+    for (let i = 0; i < 4; i++) puff(db, i, p, 19, 1, 20, 2, i / 4, 9, 5, 4);
+    db.instanceMatrix.needsUpdate = true;
+  };
+}
+
+// 4. GEMPA — blok kota: gedung berjendela, jalan, mobil; cincin getar, retakan, debu
+function gempa(sc) {
+  const { g } = stage(sc), rr = cincin(g, 3, C.oren);
+  bx(g, 84, .3, 8, 0xE8E4DA, 0, .15, 0); bx(g, 8, .3, 84, 0xE8E4DA, 0, .16, 0);
+  const L = [[-24, -18, 12, 26, 12], [-10, -32, 10, 16, 10], [20, -22, 12, 34, 12], [34, -9, 9, 18, 9], [-26, 18, 12, 20, 12], [-8, 30, 10, 28, 10], [22, 22, 12, 22, 12], [36, 16, 9, 14, 9]];
+  const B = L.map(([x, z, w, h, d], i) => gedung(g, x, z, w, h, d, i === 2 ? 0xF8CDBF : C.putih));
+  const cars = [[-14, 0, 0, C.oren], [12, -1.5, 0, 0x8DB4D8], [1.5, -16, PI / 2, C.tinta]].map(([x, z, ry, c]) => { const q = grp(g, x, .9, z, ry); bx(q, 5, 1.6, 2.6, c); bx(q, 2.6, 1.4, 2.4, 0xE8E4DA, -.3, 1.4, 0); return q; });
+  const ck = [[-6, -9, .5, 20], [14, 10, -.7, 15], [-14, 12, 1.1, 12]].map(([x, z, ry, l]) => { const m = bx(g, l, .12, .7, 0xA79C98, x, .22, z); m.rotation.y = ry; return m; });
+  const du = pool(g, ball, 0xEADFD2, 8, { transparent: true, opacity: .8 });
+  return p => {
+    rr.forEach((m, i) => { const u = fr(p + i / 3); riak(m, 4 + 52 * u, .15, .85 * (1 - u)); });
+    const e = .5 + .5 * sn(TAU * p - 1.2);
+    B.forEach((b, i) => { const k = i === 2 ? 1.6 : 1; b.rotation.z = sn(TAU * 16 * p + i * 1.7) * .03 * e * k; b.rotation.x = sn(TAU * 13 * p + i) * .022 * e * k; });
+    cars.forEach((c, i) => { c.position.y = .9 + .3 * Math.abs(sn(TAU * 18 * p + i)) * e; });
+    ck.forEach(m => m.scale.set(.5 + .5 * e, 1, 1 + .8 * e));
+    for (let i = 0; i < 8; i++) puff(du, i, p, L[i][0] + 3, 1, L[i][1] + L[i][4] / 2, 2, i / 8, 9, 3.4, 2);
+    du.instanceMatrix.needsUpdate = true;
+  };
+}
+
+// 5. ERUPSI — gunung berlapis, aliran lava berpendar, kolom asap, percikan, desa dan hutan di kaki
+function erupsi(sc) {
+  const { g } = stage(sc), em = { emissive: 0xEF6A4C, emissiveIntensity: .6 };
+  cy(g, 7, 31, 28, C.tinta, 0, 14, 0, 8, { flatShading: true }); cy(g, 12, 31, 12, 0x6B6E8C, 0, 6, 0, 8, { flatShading: true });
+  const kw = cy(g, 6.4, 6.4, 1.6, C.oren, 0, 28.4, 0, 8, em);
+  const lv = [.25, .8, 1.3, 1.85].map(a => { const q = grp(g, cs(a) * 17.6, 14.6, sn(a) * 17.6, Math.atan2(cs(a), sn(a))); q.rotation.order = 'YXZ'; q.rotation.x = .86; return bx(q, 2.4, .5, 28, C.oren, 0, 0, 0, { ...em }); });
+  [[30, 24, 11, 8], [14, 38, 10, 7], [40, 6, 10, 7]].forEach(([x, z, w, h], i) => rumah(g, x, z, w, h, i ? 0x8DB4D8 : C.oren, i));
+  hutan(g, sebar(12, 9, 50, [[0, 0, 36], [30, 24, 10], [14, 38, 10], [40, 6, 10]]));
+  const as = pool(g, ball, 0xB9B7CF, 10, { transparent: true, opacity: .9 }), ep = pool(g, ball, C.api, 8);
+  return p => {
+    kw.material.emissiveIntensity = .5 + .4 * sn(TAU * 2 * p); lv.forEach((m, i) => m.material.emissiveIntensity = .4 + .4 * sn(TAU * 2 * p + i * 1.3));
+    for (let i = 0; i < 10; i++) puff(as, i, p, 0, 29, 0, 1, i / 10, 42, 9, 16);
+    for (let i = 0; i < 8; i++) { const u = fr(p * 2 + i / 8), a = TAU * i / 8 + .5, o = 15 * u;
+      put(ep, i, cs(a) * o, 29 + 72 * u * (1 - u) - 9 * u * u, sn(a) * o, 1.1 * (1 - sm((u - .7) / .3))); }
+    as.instanceMatrix.needsUpdate = ep.instanceMatrix.needsUpdate = true;
+  };
+}
+
+// 6. PASANG LAUT — dermaga, perahu tertambat, rumah panggung di pulau pasir, tiang ukur, bulan
+function pasang(sc) {
+  const { g, add } = stage(sc), air = kolam(add, 52, 0xACD6EC), rr = cincin(g, 3, 0xFFFFFF);
+  cy(g, 14, 16, 5, C.tanah, -28, 2.5, 16, 40); const pi = grp(g, 0, 5, 0);
+  [[-6, -4], [6, -4], [-6, 4], [6, 4]].forEach(([x, z]) => cy(pi, .7, .7, 6, C.kayu, -30 + x, 3, 16 + z, 6));
+  const rp = grp(pi, -30, 6, 16); bx(rp, 16, 1, 11, 0xF0DCB8, 0, -.5, 0); rumah(rp, 0, 0, 9, 7, 0x8DB4D8, .2);
+  palem(pi, -20, 24, .9); palem(pi, -38, 8, .8);
+  const pr = grp(g, 14, 0, -6); bx(pr, 38, 1.2, 8, 0xF0DCB8, 0, 16, 0); bx(pr, 38, .5, .5, C.kayu, 0, 18.4, -3.8);
+  for (let i = 0; i < 6; i++) { [-3.4, 3.4].forEach(z => cy(pr, 1.1, 1.1, 16, C.kayu, -17 + i * 6.8, 8, z, 8)); cy(pr, .4, .4, 2.4, C.kayu, -17 + i * 6.8, 17.4, -3.8, 6); }
+  [-18, 18].forEach(x => cy(pr, 1, 1.2, 1.8, C.tinta, x, 17.5, 2.6, 8));
+  const pb = perahu(g, 24, 8, 0x8DB4D8), tg = grp(g, 4, 0, 22); bx(tg, 1.6, 24, 1.6, C.putih, 0, 12, 0); [4, 12, 20].forEach(y => bx(tg, 1.7, 2.4, 1.7, C.oren, 0, y, 0));
+  const bl = add(ball, C.putih, -26, 42, -24); bl.scale.setScalar(5.5);
+  return p => {
+    const lv = 4 + 2.6 * sn(TAU * p); air.scale.y = lv; bl.position.y = 42 + 1.5 * sn(TAU * p + 1);
+    pb.position.y = lv + .7 + .4 * sn(TAU * 2 * p); pb.rotation.z = .05 * sn(TAU * 2 * p);
+    rr.forEach((m, i) => { const u = fr(p + i / 3); riak(m, 14 + 36 * u, lv + .2, .6 * (1 - u)); });
+  };
+}
+
+// 7. CUACA EKSTREM — puting beliung, awan gelap, petir berkedip, pohon bergoyang, hujan miring
+function cuaca(sc) {
+  const { g } = stage(sc), K = 10, ct = new THREE.TorusGeometry(1, .16, 8, 36).rotateX(PI / 2), rings = [];
+  for (let k = 0; k < K; k++) { const m = new THREE.Mesh(ct, mat(k % 2 ? 0x9C97B8 : 0xB8B3D0)); m.position.y = 3 + k * 4.6; m.scale.setScalar(2.5 + k * 2.2); g.add(m); rings.push(m); }
+  [[-12, 50, -4, 1.3], [12, 52, 2, 1.4], [-30, 46, 14, 1], [30, 46, -14, 1]].forEach(([x, y, z, k]) => awan(g, x, y, z, k, 0xBDBAD4));
+  const pt = grp(g, -26, 0, -8); [[0, 44], [3, 36], [-1, 28], [2, 20], [-1, 12], [1, 4]].forEach(([x, y], i) => { const b = bx(pt, 1.6, 9, 1.6, 0xFFE08A, x, y, 0, { emissive: 0xFFD060, emissiveIntensity: 1 }); b.rotation.z = i % 2 ? .35 : -.35; });
+  rumah(g, 28, 14, 13, 9, C.oren, .3); rumah(g, 24, -26, 12, 9, 0x8DB4D8, -.2);
+  const tr = [[-34, 8, 1.1], [-22, 28, .9], [-32, -16, 1], [12, 34, .95], [36, -2, .8], [-6, -36, .9]].map(([x, z, s], i) => pohon(g, x, z, s, i % 2 ? 0x8DC49A : 0xA6D1A0));
+  const N = 30, hj = pool(g, new THREE.BoxGeometry(.5, 6, .5), 0x8FB4DA, N), r = rng(8), dr = Array.from({ length: N }, () => [(r() - .5) * 90, (r() - .5) * 90, r()]);
+  const db = pool(g, new THREE.BoxGeometry(1, 1, 1), C.tinta, 8);
+  return p => {
+    rings.forEach((m, k) => { const a = TAU * p * 2 - k * .55, A = .5 + k * 1.0; m.position.x = A * cs(a); m.position.z = A * sn(a); });
+    pt.visible = fr(p * 3) < .09;
+    tr.forEach((q, i) => { q.rotation.z = .1 + .09 * sn(TAU * 3 * p + i); q.rotation.x = .05 * sn(TAU * 2 * p + i * 2); });
+    dr.forEach(([x, z, o], i) => { const L = fr(p * 3 + o), y = 46 - L * 46; put(hj, i, x * .5 + (46 - y) * .3, y, z * .5, 1, 1, 1, 0, .3); });
+    for (let i = 0; i < 8; i++) { const u = fr(p + i / 8), y = 4 + u * 40, a = TAU * (p * 3 + i / 8), r2 = 6 + y * .55, s = 1.7 * sm(u / .1) * (1 - sm((u - .85) / .15));
+      put(db, i, r2 * cs(a), y, r2 * sn(a), s, s, s, a * 2, a); }
+    hj.instanceMatrix.needsUpdate = db.instanceMatrix.needsUpdate = true;
+  };
+}
+
+// 8. KEKERINGAN — tanah retak, kolam menyusut, pohon mati, kincir angin, lumbung, matahari
+function kekeringan(sc) {
+  const { g } = stage(sc, C.tanah), r = rng(5), S = 26, rt = pool(g, new THREE.BoxGeometry(1, 1, 1), 0xD9BC8E, S);
+  for (let i = 0; i < S / 2; i++) { const a = r() * TAU, d = 6 + r() * 30, L = 8 + r() * 10, x = cs(a) * d, z = sn(a) * d, b = r() * TAU, e = b + (r() > .5 ? .7 : -.7);
+    put(rt, i * 2, x, .12, z, L, .12, .9, -b); put(rt, i * 2 + 1, x + cs(b) * L * .5 + cs(e) * 3, .12, z - sn(b) * L * .5 - sn(e) * 3, L * .5, .12, .8, -e); }
+  rt.instanceMatrix.needsUpdate = true;
+  cy(g, 17, 17, .5, 0xE6CBA0, -14, .25, 12, 40); const sisa = cy(g, 10, 10, .6, C.air, -14, .35, 12, 36);
+  [[-30, -6, 1], [-8, -22, .8], [28, 20, .9]].forEach(([x, z, s]) => { const q = grp(g, x, 0, z, x); cy(q, .9 * s, 1.5 * s, 16 * s, C.kayu, 0, 8 * s, 0, 7);
+    [[-.8, 11, 7], [.7, 14, 6]].forEach(([rz, y, L]) => { const b = cy(q, .35 * s, .55 * s, L * s, C.kayu, (rz < 0 ? 2.4 : -2.2) * s, y * s, 0, 6); b.rotation.z = rz; }); });
+  const km = grp(g, 24, 0, -12); cy(km, .9, 2.2, 22, 0xE8E4DA, 0, 11, 0, 6); bx(km, 1.6, 1.6, 3, C.tinta, 0, 23, 1);
+  const rot = grp(km, 0, 23, 2.4), bl = []; for (let i = 0; i < 6; i++) { const q = grp(rot); q.rotation.z = TAU * i / 6; bx(q, 2.2, 8, .3, i % 2 ? C.oren : C.putih, 0, 5, 0); bl.push(q); }
+  rumah(g, 4, -32, 15, 9, 0xE07A5F, .1); [[18, -28], [22, -24]].forEach(([x, z]) => { cy(g, 3.2, 3.2, 3.6, 0xF4D58A, x, 1.8, z, 12); co(g, 3.2, 2.4, 0xF4D58A, x, 4.7, z, 12); });
+  const sun = grp(g, -26, 38, -22); sun.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), new THREE.Vector3(1, 1, 1).normalize());
+  const spin = grp(sun); const sb = new THREE.Mesh(ball, mat(0xFFB84D)); sb.scale.setScalar(6); sun.add(sb);
+  for (let i = 0; i < 10; i++) { const a = TAU * i / 10, b = bx(spin, 1.4, 5, 1.4, C.api, cs(a) * 11, sn(a) * 11, 0); b.rotation.z = a - PI / 2; }
+  return p => { rot.rotation.z = TAU * p * 2; spin.rotation.z = TAU * p / 10; sun.scale.setScalar(1 + .05 * sn(TAU * 2 * p)); sisa.scale.set(1 + .08 * sn(TAU * p), 1, 1 + .08 * sn(TAU * p)); };
+}
+
+// 9. KARHUTLA — hutan rapat, sungai, menara pengawas, api + asap + bara, helikopter water-bombing
+function karhutla(sc) {
+  const { g } = stage(sc), F = [[4, -6, 1.15], [14, 4, 1], [8, 14, .9], [22, -8, .85], [20, 18, .8], [-2, 6, .75]];
+  bx(g, 12, .2, 66, C.tanah, -28, .1, 0).rotation.y = .12; bx(g, 6, .4, 66, C.air, -28, .2, 0).rotation.y = .12;
+  hutan(g, sebar(34, 11, 50, [[-28, 0, 10], ...F.map(([x, z]) => [x, z, 7]), [-14, -34, 7]]), [0xA6D1A0, 0x8DC49A, 0x9ACC92, 0x95C88F]);
+  const mn = grp(g, -14, 0, -34); [[-2.2, -2.2], [2.2, -2.2], [-2.2, 2.2], [2.2, 2.2]].forEach(([x, z]) => cy(mn, .5, .5, 14, C.kayu, x, 7, z, 6));
+  bx(mn, 6, 3.5, 6, C.putih, 0, 15.5, 0); co(mn, 5, 3, C.oren, 0, 18.8, 0, 4).rotation.y = PI / 4;
+  const fl = F.map(([x, z, s]) => { cy(g, 5 * s, 5 * s, .25, 0x857C92, x, .15, z, 18); const f = grp(g, x, 0, z); f.scale.setScalar(s);
+    return { o: co(f, 5.4, 15, C.oren, 0, 7.5, 0, 7), n: co(f, 3.3, 10, C.api, 0, 5, 0, 7), x, z }; });
+  const as = pool(g, ball, 0xCAC5D8, 12, { transparent: true, opacity: .65 }), ep = pool(g, ball, C.api, 12);
+  const hl = grp(g), ro = grp(hl, 0, 2.8, 0); ball && (() => { const b = new THREE.Mesh(ball, mat(C.putih)); b.scale.set(4.5, 2.6, 2.6); hl.add(b); })();
+  bx(hl, 7, .9, .9, 0xE8E4DA, -6, .4, 0); bx(ro, 11, .2, .8, C.tinta); bx(ro, .8, .2, 11, C.tinta); [-1.3, 1.3].forEach(z => bx(hl, 6, .3, .3, C.tinta, 0, -2.6, z));
+  bx(hl, .15, 5, .15, C.tinta, 0, -5, 0); cy(hl, .9, .7, 1.6, 0x7FB2D9, 0, -8, 0, 8);
+  return p => {
+    fl.forEach(({ o, n, x, z }, i) => {
+      o.scale.set(1 + .08 * cs(TAU * 4 * p + i), 1 + .16 * sn(TAU * 3 * p + i * 2), 1 + .08 * cs(TAU * 4 * p + i)); o.rotation.y = TAU * p * 2 + i;
+      n.scale.y = 1 + .22 * sn(TAU * 4 * p + i * 1.3); n.rotation.y = -TAU * p * 3;
+      for (let k = 0; k < 2; k++) puff(as, i * 2 + k, p, x, 16, z, 1, k / 2 + i * .11, 34, 4.6, 10);
+    });
+    for (let i = 0; i < 12; i++) { const [x, z] = F[i % 6], u = fr(p * 2 + i / 12);
+      put(ep, i, x + 8 * u * cs(i * 2.1), 10 + 26 * u, z + 8 * u * sn(i * 2.1), .8 * (1 - sm((u - .6) / .4))); }
+    const a = -TAU * p; hl.position.set(10 + cs(a) * 24, 38 + 1.5 * sn(TAU * 2 * p), 2 + sn(a) * 24); hl.rotation.y = PI / 2 - a; ro.rotation.y = TAU * p * 20;
+    as.instanceMatrix.needsUpdate = ep.instanceMatrix.needsUpdate = true;
+  };
+}
+
+// durasi satu siklus (detik). Naikkan angkanya kalau mau lebih pelan.
+const DEF = { banjir: [banjir, 10], tsunami: [tsunami, 10], longsor: [longsor, 10], gempa: [gempa, 9],
+  erupsi: [erupsi, 10], pasang: [pasang, 10], cuaca: [cuaca, 10], kekeringan: [kekeringan, 12], karhutla: [karhutla, 9] };
+const BENCANA = Object.fromEntries(Object.entries(DEF).map(([k, [fn, d]]) =>
+  [k, scene => { TINT = TN[k]; const up = fn(scene); up(.45); return { tinggi: 52, durasi: d, gerak: t => up(fr(t / d)) }; }]));
+
+window.__3D = { THREE, BENCANA }; dispatchEvent(new Event('ben3d'));
+</script>
+</body>
+</html>
